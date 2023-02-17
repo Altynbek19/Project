@@ -1,0 +1,86 @@
+body {
+    margin: 0 auto;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blackout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 3;
+    opacity: 0.5;
+}
+.modal-container {
+    position: relative;
+    width: 350px;
+    z-index: 4;
+    background-color: white;
+    min-height: 300px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.title-modal {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.modal-container form {
+    margin: 20px 0px;
+}
+.container {
+    max-width: 1300px;
+    margin: 10px auto;
+    min-height: 400px;
+}
+.center-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.button-green {
+    margin: 5px 0;
+    background-color: rgba(153, 194, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.button-green:hover {
+    background-color: lightskyblue;
+}
+.form-input {
+    margin: 15px 0;
+}
+.form-input label, .form-input span {
+    display: block;
+}
+.modal-form .error {
+    color: red;
+}
+.form-modal {
+    width: 100%;
+}
+.form-modal input {
+    width: 100%;
+}

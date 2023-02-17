@@ -1,0 +1,104 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(153, 194, 255, 0.24);
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    padding-top: 6px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.exit{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    position: inherit;
+}
+*{
+    color: rgba(255, 255, 255, 1);
+    
+}
+input{
+    background: none;
+    width: 360px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.Sign_in{
+    background-color: black;
+    min-width: 360px;
+    min-height: 30px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.Sign_in:hover{
+    background-color: rgba(0, 0, 0, 0.604);
+}
+.e-mail, .password{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+.forget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    border-bottom: 1px solid white ;
+    height: 100px;
+    padding-bottom: 15px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+
+}
+
+.mark{
+    width: 18px;
+    height: 18px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 360px;
+}
+
+.social_net{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+.reg{
+    background: none;
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 360px;
+    height: 38px;
+    border-radius: 3px;
+}
+
+.reg:hover{
+    background-color: rgba(255, 255, 255, 0.259);
+}
