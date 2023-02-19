@@ -17,10 +17,7 @@ const Registration = (props) => {
     console.log(errors)
 
     return (
-        <div className='container'>
-            <div className='exit'>
-                <img src={exit} alt="" onClick={() => props?.modal.dispatch({ type: "main", active:"false"})}/>
-            </div>
+        <div className='cc'>
             <h2>Регистрация</h2>   
             <form className="modal-form" onSubmit={handleSubmit(onSubmit)}>         
             <div className='name'>
@@ -54,19 +51,6 @@ const Registration = (props) => {
                     }
                 })}
                 />
-            </div>
-            <div className='phone'>
-                <h4>Телефон</h4>
-                <input type="text" placeholder='0 ххх ххх ххх'
-                {...register("number",{
-                    required: "Обьязательно",
-                    maxLength: {
-                        value: 10,
-                        message: 'Ваше имя должно быть меньше 20 символов'
-                    }, 
-                })}
-                />
-                {errors.number && <span className="error" role="alert">{errors.number?.message}</span>}
             </div>
             <div className='new_password'>
                 <h4>Создать пароль</h4>
@@ -110,7 +94,7 @@ const Registration = (props) => {
 
             <div>
                 <div className='contact'>
-                    <p>Войти с помощью</p>
+                    <h6>Войти с помощью</h6>
                 </div>
                 <div className='social_net'>
                     <div>

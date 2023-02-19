@@ -7,11 +7,11 @@ import facebook from '/src/assets/facebook.png'
 
 const Authorization = (props) => {
 
+
+
+
     return (
-        <div className='container'>
-            <div className='exit'>
-                <img src={exit} alt="" />
-            </div>
+        <div className='cc'>
             <h2 className=''>Войти</h2>            
             <div className='e-mail'>
                 <h4>E-mail</h4>
