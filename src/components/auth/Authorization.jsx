@@ -24,8 +24,8 @@ const Authorization = (props) => {
             <button className='Sign_in'>Войти</button>
             <div className='forget'>
                 <div className='remember'>
-                    <img src={mark} alt="" className='mark'/>
-                    <p>запомнить меня</p>
+                    <input  className="remember_inp" type="checkbox" />
+                    <h5>Запомнить меня</h5>
                 </div>
                 <div><a href="#" className='forget_pass'>Забыли пароль?</a></div>
             </div>

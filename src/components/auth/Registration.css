@@ -10,6 +10,16 @@
     box-sizing: border-box;
     padding-right: 20px;
 }
+
+.Sign_in_input{
+    color: white;
+}
+.remember_inp{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    cursor: pointer;
+}
 .exit{
     display: flex;
     justify-content: end;

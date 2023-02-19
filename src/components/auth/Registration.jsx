@@ -38,7 +38,7 @@ const Registration = (props) => {
                             } 
                         })}
                     />
-                    {errors.firstName && <span className="error" role="alert">{errors.fullName?.message}</span>}
+                    {errors.fullName && <span className="error" role="alert">{errors.fullName?.message}</span>}
             </div>
             <div className='e-mail'>
                 <h4>E-mail</h4>
@@ -51,6 +51,7 @@ const Registration = (props) => {
                     }
                 })}
                 />
+                {errors.email && <span className="error" role="alert">{errors.email?.message}</span>}
             </div>
             <div className='new_password'>
                 <h4>Создать пароль</h4>
@@ -81,13 +82,13 @@ const Registration = (props) => {
             </div>
             <div className="Sign_in">
                     <label htmlFor="submit"></label>
-                    <input type="submit" name="submit" value="Зарегестрироваться"/>
-                </div>
+                    <input className="Sign_in_input" type="submit" name="submit" value="Зарегестрироваться"/>
+            </div>
             </form>
             <div className='forget'>
                 <div className='remember'>
-                    <img src={mark} alt="" className='mark'/>
-                    <p>запомнить меня</p>
+                    <input  className="remember_inp" type="checkbox" />
+                    <h5>Запомнить меня</h5>
                 </div>
                 <div><a href="#" className='forget_pass'>Забыли пароль?</a></div>
             </div>
