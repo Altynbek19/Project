@@ -68,6 +68,7 @@ header, footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 700px;
 }
 .button-green {
     margin: 5px 0;
@@ -80,6 +81,7 @@ header, footer {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 16px;
 }
 .button-green:hover {
     background-color: rgb(118, 153, 241);
@@ -97,4 +99,12 @@ img{
 
 a{
     color: black;
+}
+
+
+
+@media and (max-width: 100px) and (min-width: 50px){
+    body{
+
+    }
 }

@@ -1,7 +1,8 @@
 .container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     /* background-color: rgba(153, 194, 255, 0.24); */
     border-radius: 8px;
     padding-left: 20px;
@@ -10,6 +11,8 @@
     box-sizing: border-box;
     padding-right: 20px;
 }
+
+
 
 .Sign_in_input{
     color: white;
