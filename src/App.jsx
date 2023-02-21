@@ -5,6 +5,8 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Modal from './components/Modal'
 import { useState } from 'react'
+import { useContext } from 'react'
+
 
 function App() {
 
