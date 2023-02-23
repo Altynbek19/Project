@@ -95,7 +95,7 @@ const Registration = (props) => {
 
             <div>
                 <div className='contact'>
-                    <h6>Войти с помощью</h6>
+                    <h5>Войти с помощью</h5>
                 </div>
                 <div className='social_net'>
                     <div>
@@ -110,8 +110,8 @@ const Registration = (props) => {
                 </div>
             </div>
             <div className='register'>
-                <div>
-                    <p>Нет аккаунта?</p>
+                <div className="a_have_not">
+                    <a href="#" >У меня есть аккаунт</a>
                 </div>
                 <button className='reg'>Войти</button>
             </div>

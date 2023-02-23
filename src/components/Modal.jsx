@@ -3,9 +3,7 @@ import Registration from "./auth/Registration";
 import Password_recovery_email from "./auth/Password_recovery_email"
 import Password_recovery_pass from "./auth/Password_recovery_pass"
 import exit from '/src/assets/exit.png'
-import { useContext } from "react";
 
-const value = useContext(Context)
 const Modal = (props) => {
     const modal = props?.modal?.props
 
@@ -41,4 +39,3 @@ const Modal = (props) => {
 };
 
 export default Modal
-export const Context = React.createContext();
