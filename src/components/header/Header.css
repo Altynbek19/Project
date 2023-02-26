@@ -5,7 +5,7 @@ header{
 .header_logo{
     display: flex;
     justify-content: space-between;
-    background: rgba(1, 1, 88, 1);
+    background: none;
     padding: 10px 90px;
 }
 .profile{
@@ -23,33 +23,230 @@ header{
     width: 23px;
 
 }
+.menu{
+    display: none;
+}
 
 .product{
     display: flex;
     justify-content: space-around;
-    background-color: white;
+    background: none;
+    flex-wrap: wrap;
 }
 
 .product>a{
-    color: black;
+    color: white;
+    font-size: 28px;
 
 }
 .product>a:hover{
     border-bottom: 1px solid black;
     width: max-content;
 }
-
-.product input{
-    background-color: rgba(1, 1, 88, 1);
-    color: white;
+.search_logo, .search_logo input{
+    display: none;
+}
+.search input{
+    background-color: white;
+    color: black;
     background-image: url(/src/assets/header/search.png);
     background-repeat: no-repeat; /*Убираем повтор изображения*/   
     background-position: 360px; /*Позиционируем*/
     background-size: 15px;
     outline: none; /*убираем стандартную обводку браузера*/  
-    border-radius: 5px; /*закругляем углы для остальных браузеров*/  
+    border-radius: 20px; /*закругляем углы для остальных браузеров*/  
     padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
     height: 20px; /*высота строки ввода*/   
     font-size: 13px; /*размер шрифта*/
 
+}
+
+.search input::placeholder{
+    color: black;
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .search_logo input{  
+        display: flex;
+        background-color: white;
+        color: black;
+        background-image: url(/src/assets/header/search.png);
+        background-repeat: no-repeat; /*Убираем повтор изображения*/   
+        background-position: 400px; /*Позиционируем*/
+        background-size: 15px;
+        outline: none; /*убираем стандартную обводку браузера*/  
+        border-radius: 20px; /*закругляем углы для остальных браузеров*/   
+        padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+        height: 20px; /*высота строки ввода*/   
+        font-size: 13px; /*размер шрифта*/
+        width: 400px;
+        align-items: center;
+    }
+    .search_logo{  
+        display: flex;
+        align-items: center;
+        padding-right: 0px;
+        margin-left: 10px;
+    }
+
+    .search{
+        display: none;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .search_logo input{
+        width: 340px;
+        background-position: 340px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .header_logo{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        padding: 10px 20px;
+    }
+    .logo{
+        display: flex;
+        flex-grow: 1;
+    }
+    .search_logo input{
+        display: flex;
+        flex-grow: 1;
+        width: 340px;
+        background-position: 340px;
+        margin-left: 80px;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        flex-grow: 1;
+    }
+    .search{
+        display: none;
+    }
+    .search input{
+        display: none;
+    }
+    .basket{
+        display: none;
+    }
+    .save{
+        display: none;
+    }
+    .user_profile{
+        display: none;
+    }
+    
+    .product{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .search_logo input {
+        background-color: white;
+        color: black;
+        background-image: url(/src/assets/header/search.png);
+        background-repeat: no-repeat; /*Убираем повтор изображения*/   
+        background-position: 300px; /*Позиционируем*/
+        background-size: 15px;
+        outline: none; /*убираем стандартную обводку браузера*/  
+        border-radius: 20px; /*закругляем углы для остальных браузеров*/  
+        padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+        height: 20px; /*высота строки ввода*/   
+        font-size: 13px; /*размер шрифта*/
+        width: 300px;
+    }
+
+    .search_logo{
+        margin-left: -30px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .header_logo{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        padding: 10px 20px;
+    }
+    .logo{
+        display: flex;
+        flex-grow: 1;
+    }
+    .search_logo input{
+        display: flex;
+        flex-grow: 1;
+        width: 240px;
+        background-position: 240px;
+    }
+    .search_logo{
+        margin-left: -70px;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        flex-grow: 1;
+    }
+    .search{
+        display: none;
+    }
+    .search input{
+        display: none;
+    }
+    .basket{
+        display: none;
+    }
+    .save{
+        display: none;
+    }
+    .user_profile{
+        display: none;
+    }
+    
+    .product{
+        display: none;
+    }
+}
+@media screen and (max-width:520px){
+    .search_logo input{
+        width: 200px;
+        background-position: 200px;
+    }
+}
+@media screen and (max-width: 470px){
+    .search_logo input{
+        width: 100px;
+        background-position: 100px;
+    }
+
+    .header_logo{
+        padding-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 360px){
+    .search_logo input{
+        width: 80px;
+        background-position: 80px;
+    }
+    
+}
+
+
+@media screen and (max-width: 280px){
+    .search_logo{
+        display: none;
+    }
 }

@@ -36,8 +36,7 @@ const Main = (props) => {
     }
 
     return (
-        <div className="container center-flex">
-            Главная страница
+        <div className="container_center-flex">
             <div onClick={() => openModal('authorization')}>
                 <Button text='Авторизация' />
             </div>

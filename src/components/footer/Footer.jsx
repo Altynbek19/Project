@@ -43,9 +43,9 @@ const Footer = (Props) => {
                 <div className='contact'>
                     <div className='img_content'>
                         <div className='img_contact'>
-                            <img src={twitter} alt="" />
-                            <img src={facebook} alt="" />
-                            <img src={instagram} alt="" />
+                            <img src={twitter} alt="" className='image_cont'/>
+                            <img src={facebook} alt="" className='image_cont'/>
+                            <img src={instagram} alt="" className='image_cont'/>
                         </div>
                         <div className='content'>
                             <p>Only Sport 2023</p>
