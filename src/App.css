@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap');
 body {
     margin: 0 auto;
+}
+*{
+    font-family: 'Roboto Slab', serif;
 }
 .modal {
     position: fixed;
@@ -104,12 +108,4 @@ img{
 
 a{
     color: black;
-}
-
-
-
-@media and (max-width: 100px) and (min-width: 50px){
-    body{
-
-    }
 }

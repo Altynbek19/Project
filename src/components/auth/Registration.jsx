@@ -5,13 +5,20 @@ import mark from '/src/assets/mark.png'
 import google from '/src/assets/google.png'
 import instagram from '/src/assets/instagram.png'
 import facebook from '/src/assets/facebook.png'
+import { auth } from "../../Firebase";
+import { createUserWithEmailAndPassword  } from 'firebase/auth';
+import {signInWithGoogle} from '../../Firebase'
+
+
 
 const Registration = (props) => {
-
     const {register, handleSubmit, watch, formState: { errors } } = useForm();
-
     const onSubmit = async data => {
-        console.log(data)
+        try {
+            await createUserWithEmailAndPassword(auth, data.email, data.password)
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     console.log(errors)
@@ -99,7 +106,7 @@ const Registration = (props) => {
                 </div>
                 <div className='social_net'>
                     <div>
-                        <img src={google} alt="" />
+                        <img onClick={signInWithGoogle} src={google} alt="" />
                     </div>
                     <div>
                         <img src={instagram} alt="" />

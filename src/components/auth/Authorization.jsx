@@ -5,6 +5,7 @@ import mark from '/src/assets/mark.png'
 import google from '/src/assets/google.png'
 import instagram from '/src/assets/instagram.png'
 import facebook from '/src/assets/facebook.png'
+import {signInWithGoogle} from '../../Firebase'
 
 const Authorization = (props) => {
 
@@ -67,7 +68,7 @@ const Authorization = (props) => {
                 </div>
                 <div className='social_net'>
                     <div>
-                        <img src={google} alt="" />
+                        <img onClick={signInWithGoogle} src={google} alt="" />
                     </div>
                     <div>
                         <img src={instagram} alt="" />

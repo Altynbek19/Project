@@ -5,6 +5,7 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Modal from './components/Modal'
 import { useState } from 'react'
+import { signInWithGoogle } from "./Firebase";
 
 function App() {
 
