@@ -44,6 +44,7 @@ input{
     border: 1px solid white;
     border-radius: 3px;
     padding-left: 10px;
+    color: white;
 }
 .Sign_in{
     background-color: black;

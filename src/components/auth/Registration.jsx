@@ -6,16 +6,18 @@ import google from '/src/assets/google.png'
 import instagram from '/src/assets/instagram.png'
 import facebook from '/src/assets/facebook.png'
 import { auth } from "../../Firebase";
-import { createUserWithEmailAndPassword  } from 'firebase/auth';
+import { createUserWithEmailAndPassword ,sendEmailVerification   } from 'firebase/auth';
 import {signInWithGoogle} from '../../Firebase'
-
+import { doc, setDoc } from "firebase/firestore";
 
 
 const Registration = (props) => {
     const {register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = async data => {
         try {
-            await createUserWithEmailAndPassword(auth, data.email, data.password)
+            const userCredential = await createUserWithEmailAndPassword(auth, data.email, data.password)
+            sendEmailVerification(userCredential.user)
+            await setDoc(doc(database, "users", data.email), data);
         } catch (error) {
             console.log(error)
         }

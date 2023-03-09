@@ -1,5 +1,5 @@
 import Button from "../components/ui/Button";
-import {useReducer} from 'react'
+import { useReducer } from 'react'
 import Modal from "../components/Modal";
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from '..//firebase'
@@ -42,17 +42,29 @@ const Main = (props) => {
     };
 
     if (user) {
-        return (
-            <div className="container center-flex">
-                Главная страница
-                <div>Поздравляю, вы вошли в свой аккаунт {user.displayName}</div>
-                <div>Ваша почта: {user.email}</div>
-                <div onClick={signOut}>
-                    <Button text='Выйти с аккаунта' />
+        if (user.emailVerified){
+            return (
+                <div className="container center-flex">
+                    Главная страница
+                    <div>Поздравляю, вы вошли в свой аккаунт {user.displayName}</div>
+                    <div>Ваша почта: {user.email}</div>
+                    <div onClick={signOut}>
+                        <Button text='Выйти с аккаунта' />
+                    </div>
                 </div>
-            </div>
-        )
-    } else {
+            )
+            }else 
+            return (
+                <div className="container center-flex">
+                    Главная страница
+                    <div>Вам нужно подтвердить почту</div>
+                    <div>Ваша почта: {user.email}</div>
+                    <div onClick={signOut}>
+                        <Button text='Выйти с аккаунта' />
+                    </div>
+                </div>
+            )
+    } else 
         
         return (
             <div className="container_center-flex">
@@ -71,8 +83,7 @@ const Main = (props) => {
                 
                 <Modal modal={modalState}/>
             </div>
-        );
-    
+    );
 };
-}
+
 export default Main;

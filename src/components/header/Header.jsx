@@ -15,7 +15,7 @@ const Header = (Props) => {
                     <img src={logo} alt="" />
                 </div>
                 <div className='search_logo'>
-                    <input type="text" />
+                    <input type="text" placeholder='Поиск'/>
                 </div>
                 <div className='profile'>
                     <img className='basket' src={basket} alt="" />

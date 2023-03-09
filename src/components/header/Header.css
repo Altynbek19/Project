@@ -62,6 +62,9 @@ header{
 .search input::placeholder{
     color: black;
 }
+.search_logo input::placeholder{
+    color: black;
+}
 
 
 .search{
