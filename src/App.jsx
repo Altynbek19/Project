@@ -10,6 +10,7 @@ import Modal from './components/Modal'
 import { useState } from 'react'
 import { signInWithGoogle } from "./Firebase";
 
+
 function App() {
 
 
@@ -21,8 +22,8 @@ function App() {
         router={router}
       />
       <Footer /> */}
-      <Header_white />
-      <Product />
+      <Header_white/>
+      <Product/>
       <Footer />
     </div>
   )
