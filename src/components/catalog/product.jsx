@@ -11,8 +11,12 @@ import recommendations_3 from '../../assets/catalog/recommendations_3.png'
 import recommendations_4 from '../../assets/catalog/recommendations_4.png'
 import recommendations_5 from '../../assets/catalog/recommendations_5.png'
 import './product.css'
+import {useParams} from "react-router-dom"
 
-function product(props) {
+function Product(props) {
+    const {id} = useParams()
+    console.log(id)
+
     return (
         <div className='product_page'>
             <div></div>
@@ -140,4 +144,4 @@ function product(props) {
     );
 }
 
-export default product;
+export default Product;

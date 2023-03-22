@@ -6,6 +6,7 @@ import icon_search from '/src/assets/header/search.png'
 import filtersearch from '/src/assets/header/filtersearch.png'
 import menu from '/src/assets/header/menu_white.png'
 import '/src/components/header/Header_white.css'
+import {Link} from 'react-router-dom'
 
 const Header_white = (Props) => {
     return (
@@ -27,8 +28,8 @@ const Header_white = (Props) => {
                 </div>
             </div>
                 <ul className='product'>
-                    <a href="">Одежда</a>
-                    <a href="">Фитнес</a>
+                    <Link to="/product/12">Одежда</Link>
+                    <Link to="/category" href="">Фитнес</Link>
                     <a href="">Акксессуары</a>
                     <a href="">Скидки</a>
                     <a href="">Горнолыжная одежда</a>
