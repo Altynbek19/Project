@@ -1,6 +1,7 @@
-header{
+.header_black{
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 .header_logo{
     display: flex;
@@ -25,55 +26,50 @@ header{
 .menu{
     display: none;
 }
-
-.product{
+.product_container{
+    width: 50%;
+}
+.product_black{
     display: flex;
     justify-content: space-around;
     background: none;
 }
 
-.product>a{
-    color: black;
-    font-size: 28px;
+.product_black>a{
+    color: white;
+    font-size: 15px;
 
 }
-.product a:hover{
-    border-bottom: 1px solid white;
+.product_black a:hover{
+    border-bottom: 1px solid black;
     width: max-content;
 }
-.search_logo, .search_logo input{
-    display: none;
+.search_logo{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
 }
-.search input{
+.search_logo input{
+    width: 700px;
+    display: block;
+    border: black 1px solid;
     background-color: white;
     color: black;
     background-image: url(/src/assets/header/search.png);
     background-repeat: no-repeat; /*Убираем повтор изображения*/   
-    background-position: 360px; /*Позиционируем*/
+    background-position: 10px; /*Позиционируем*/
     background-size: 15px;
     outline: none; /*убираем стандартную обводку браузера*/  
     border-radius: 20px; /*закругляем углы для остальных браузеров*/  
     padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
     height: 20px; /*высота строки ввода*/   
     font-size: 13px; /*размер шрифта*/
-
 }
 
-.search input::placeholder{
-    color: black;
-}
-.search_logo input::placeholder{
-    color: black;
-}
-
-
-.search{
-    display: flex;
-    align-items: center;
-}
 
 @media screen and (max-width: 1210px) {
     .search_logo input{  
+        border: black 1px solid;
         display: flex;
         background-color: white;
         color: black;
@@ -96,10 +92,6 @@ header{
         margin-left: 10px;
     }
 
-    .search{
-        display: none;
-        align-items: center;
-    }
 }
 
 @media screen and (max-width: 820px){
@@ -133,12 +125,6 @@ header{
         padding-left: 5%;
         flex-grow: 1;
     }
-    .search{
-        display: none;
-    }
-    .search input{
-        display: none;
-    }
     .basket{
         display: none;
     }
@@ -149,7 +135,7 @@ header{
         display: none;
     }
     
-    .product{
+    .product_black{
         display: none;
     }
 }
@@ -199,12 +185,6 @@ header{
         padding-left: 5%;
         flex-grow: 1;
     }
-    .search{
-        display: none;
-    }
-    .search input{
-        display: none;
-    }
     .basket{
         display: none;
     }
@@ -215,7 +195,7 @@ header{
         display: none;
     }
     
-    .product{
+    .product_black{
         display: none;
     }
 }

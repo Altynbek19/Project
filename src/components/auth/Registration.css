@@ -1,3 +1,19 @@
+.container_reg_image{
+    display: flex;
+}
+.choose_log_in_register a{
+    color: rgba(23, 34, 31, 1);
+}
+.container_1{
+    width: 50%;
+    height: 100%;
+}
+.container_2{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -11,9 +27,12 @@
     box-sizing: border-box;
     padding-right: 20px;
 }
-
-.cc{
-    color: white;
+.choose_register_2{
+    border-bottom: 2px solid rgba(154, 255, 74, 1);
+    cursor: pointer;
+}
+.choose_register{
+    cursor: pointer;
 }
 
 .Sign_in_input{
@@ -25,6 +44,10 @@
     height: 20px;
     padding: 0px;
     cursor: pointer;
+}
+.choose_log_in_register{
+    display: flex;
+    gap: 20px;
 }
 .exit{
     display: flex;
@@ -41,10 +64,10 @@ input{
     background: none;
     width: 360px;
     height: 30px;
-    border: 1px solid white;
+    border: 1px solid rgba(23, 34, 31, 1);
     border-radius: 3px;
     padding-left: 10px;
-    color: white;
+    color: black;
 }
 .Sign_in{
     background-color: black;
@@ -119,7 +142,7 @@ a{
 }
 .reg{
     background: none;
-    border: 1px solid white;
+    border: 2px solid rgba(23, 34, 31, 1);
     box-sizing: border-box;
     width: 360px;
     height: 38px;
@@ -128,4 +151,31 @@ a{
 
 .reg:hover{
     background-color: rgba(255, 255, 255, 0.259);
+}
+
+.contact_social_net{
+    width: 360px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(23, 34, 31, 1);
+}
+.contact_auth{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    margin-bottom: 50px;
+}
+
+.social_net{
+    display: flex;
+    justify-content: space-evenly;
+}
+.reg_image{
+    background: url(/src/assets/auth/reg_image.png) no-repeat;
+    background-size: cover;
+    width: 600px;
+}
+.container_reg_image a{
+    color: rgba(23, 34, 31, 1);
 }

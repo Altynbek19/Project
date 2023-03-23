@@ -2,7 +2,7 @@ import Authorization from "./auth/Authorization";
 import Registration from "./auth/Registration";
 import Password_recovery_email from "./auth/Password_recovery_email"
 import Password_recovery_pass from "./auth/Password_recovery_pass"
-import exit from '/src/assets/exit.png'
+import exit from '/src/assets/auth/exit.png'
 
 const Modal = (props) => {
     const modal = props?.modal?.props

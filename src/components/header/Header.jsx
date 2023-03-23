@@ -6,36 +6,36 @@ import icon_search from '/src/assets/header/search.png'
 import filtersearch from '/src/assets/header/filtersearch.png'
 import menu from '/src/assets/header/menu.png'
 import '/src/components/header/Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = (Props) => {
     return (
-        <header>
+        <header className='header_black'>
             <div className="header_logo">
                 <div className='logo'>
-                    <img src={logo} alt="" />
+                <Link to='/'><img src={logo} alt="" /></Link>
                 </div>
                 <div className='search_logo'>
-                    <input type="text" placeholder='Поиск'/>
+                    <input type="text"/>
                 </div>
                 <div className='profile'>
                     <img className='basket' src={basket} alt="" />
                     <img className='save' src={save} alt="" />
-                    <img className='user_profile' src={user_profile} alt="" />
+                    <Link to='/sign_in'><img className='user_profile' src={user_profile} alt="" /></Link>
                 </div>
                 <div className='menu'>
                     <img src={menu} alt="" />
                 </div>
             </div>
-                <ul className='product'>
-                    <a href="">Одежда</a>
-                    <a href="">Фитнес</a>
-                    <a href="">Акксессуары</a>
-                    <a href="">Скидки</a>
-                    <a href="">Новое поступление</a>
-                <div className='search'>
-                    <input type="text" placeholder='Поиск'/>
+                <div className='product_container'>
+                <ul className='product_black'>
+                        <Link to="/Clothes">Одежда</Link>
+                        <Link to="*">Фитнес</Link>
+                        <Link to="*">Акксессуары</Link>
+                        <Link to="*">Скидки</Link>
+                        <Link to="*">Горнолыжная одежда</Link>
+                    </ul>
                 </div>
-                </ul>
         </header>
     );
 };

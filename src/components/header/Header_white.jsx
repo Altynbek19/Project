@@ -1,5 +1,5 @@
 import logo from '/src/assets/header/logo_white.png'
-import basket from '/src/assets/header/basket_icon.png'
+import basket_white from '/src/assets/header/basket_icon_white.png'
 import save from '/src/assets/header/save_icon_white.png'
 import user_profile from '/src/assets/header/user_profile_white.png'
 import icon_search from '/src/assets/header/search.png'
@@ -19,21 +19,23 @@ const Header_white = (Props) => {
                     <input type="text"/>
                 </div>
                 <div className='profile'>
-                    <img className='basket' src={basket} alt="" />
+                    <img className='basket' src={basket_white} alt="" />
                     <img className='save' src={save} alt="" />
-                    <img className='user_profile' src={user_profile} alt="" />
+                    <Link to='/sign_in'><img className='user_profile' src={user_profile} alt="" /></Link>
                 </div>
                 <div className='menu'>
                     <img src={menu} alt="" />
                 </div>
             </div>
-                <ul className='product'>
-                    <Link to="/Clothes">Одежда</Link>
-                    <Link to="*">Фитнес</Link>
-                    <Link to="*">Акксессуары</Link>
-                    <Link to="*">Скидки</Link>
-                    <Link to="*">Горнолыжная одежда</Link>
-                </ul>
+                <div className='product_container'>
+                    <ul className='product'>
+                        <Link to="/Clothes">Одежда</Link>
+                        <Link to="*">Фитнес</Link>
+                        <Link to="*">Акксессуары</Link>
+                        <Link to="*">Скидки</Link>
+                        <Link to="*">Горнолыжная одежда</Link>
+                    </ul>
+                </div>
         </header>
     );
 };

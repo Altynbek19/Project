@@ -1,6 +1,7 @@
 header{
     display: flex;
     flex-direction: column;
+    background-color: none;
 }
 .header_logo{
     display: flex;
@@ -25,7 +26,9 @@ header{
 .menu{
     display: none;
 }
-
+.product_container{
+    width: 50%;
+}
 .product{
     display: flex;
     justify-content: space-around;
@@ -34,7 +37,7 @@ header{
 
 .product>a{
     color: black;
-    font-size: 28px;
+    font-size: 15px;
 
 }
 .product a:hover{
