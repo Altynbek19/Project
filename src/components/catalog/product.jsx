@@ -12,6 +12,7 @@ import recommendations_4 from '../../assets/catalog/recommendations_4.png'
 import recommendations_5 from '../../assets/catalog/recommendations_5.png'
 import './product.css'
 import {useParams} from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 function Product(props) {
     const {id} = useParams()
@@ -19,7 +20,10 @@ function Product(props) {
 
     return (
         <div className='product_page'>
-            <div></div>
+            <div className='road'>
+                <div><Link to='/'>Главная</Link></div>
+                <div><Link to='/Clothes'>Одежда</Link></div>
+            </div>
             <div className='product_box'>
                 <div className='product_full_img'>
                     <div className='product_img'>

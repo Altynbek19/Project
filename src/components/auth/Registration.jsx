@@ -26,6 +26,8 @@ const Registration = (props) => {
     }
 
     console.log(errors)
+// 
+
 
     return (
         <div className="container_reg_image">

@@ -19,13 +19,18 @@ const Header_white = (Props) => {
                     <input type="text"/>
                 </div>
                 <div className='profile'>
-                    <img className='basket' src={basket_white} alt="" />
-                    <img className='save' src={save} alt="" />
+                    <Link to='/basket'><img className='basket' src={basket_white} alt="" /></Link>
+                    <Link to='/favorites'><img className='save' src={save} alt="" /></Link>
                     <Link to='/sign_in'><img className='user_profile' src={user_profile} alt="" /></Link>
                 </div>
                 <div className='menu'>
                     <img src={menu} alt="" />
                 </div>
+                {/* <nav>
+                    <div className="burger_btn">
+                        <span></span>
+                    </div>
+                </nav> */}
             </div>
                 <div className='product_container'>
                     <ul className='product'>

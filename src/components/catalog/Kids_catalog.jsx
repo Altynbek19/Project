@@ -13,98 +13,122 @@ function Kids_catalog(props) {
             </div>
             <div className='kids_title'>Для детей</div>
             <div>
-                <div>
+                <div className='all_kids_product'>
                     <div className='kids_product_first_line'>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        <Link to='/product/:1'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:2'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:3'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     <div className='kids_product_second_line'>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        <Link to='/product/:4'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:5'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:6'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     <div className='kids_product_third_line'>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        <Link to='/product/:7'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:8'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:9'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     <div className='kids_product_fourth_line'>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        <Link to='/product/:10'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:11'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='kids_product_card'>
-                            <img src={kids_product} alt="" />
-                            <div className='kids_product_name_price'>
-                                <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
-                                <div className='kids_price'>6 640 KGS</div>
+                        </Link>
+                        <Link to='/product/:12'>
+                            <div className='kids_product_card'>
+                                <img src={kids_product} alt="" />
+                                <div className='kids_product_name_price'>
+                                    <div className='kids_product_name'>Свободные шорты для <br /> детей Nike</div>
+                                    <div className='kids_price'>6 640 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

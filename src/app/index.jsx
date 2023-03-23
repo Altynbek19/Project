@@ -9,6 +9,8 @@ import NotFound from "../pages/NotFound.jsx";
 import Clothes from '../components/catalog/Clothes'
 import Man_catalog from "../components/catalog/Man_catalog.jsx";
 import Woman_catalog from "../components/catalog/Woman_catalog.jsx";
+import Basket from "../components/catalog/Basket.jsx";
+import Favorites from "../components/catalog/Favorites.jsx";
 import Kids_catalog from "../components/catalog/Kids_catalog";
 import Authorization from "../components/auth/Authorization.jsx";
 import Registration from "../components/auth/Registration";
@@ -59,6 +61,17 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Header_white />
+        <Basket />
+        <Footer />
+      </div>
+    )
+  },
+  {
+    path: `${path}/favorites`,
+    element: (
+      <div>
+        <Header_white />
+        <Favorites />
         <Footer />
       </div>
     )

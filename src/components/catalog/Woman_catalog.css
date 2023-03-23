@@ -3,6 +3,9 @@
     margin-top: 0px;
 
 }
+.all_woman_product a{
+    color: rgba(18, 18, 18, 1);
+}
 .woman_title{
     color: black;
     font-weight: bolder;

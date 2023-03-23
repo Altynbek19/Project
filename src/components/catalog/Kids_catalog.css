@@ -3,6 +3,10 @@
     margin-top: 0px;
 
 }
+
+.all_kids_product a{
+    color: rgba(18, 18, 18, 1);
+}
 .kids_title{
     color: black;
     font-weight: bolder;

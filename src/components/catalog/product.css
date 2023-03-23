@@ -1,7 +1,9 @@
 .product_page{
     margin-bottom: 142px;
 }
-
+.product_page .road{
+    margin-left: 110px;
+}
 .product_box{
     display: flex;
 }

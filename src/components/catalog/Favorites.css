@@ -1,0 +1,23 @@
+.full_favorites_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.favorites_container{
+    display: flex;
+    background: url(../../assets/header/favorites/favorites_image.png) no-repeat;
+    background-size: 500px;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+.favorites_content{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.favorites_title_product{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}

@@ -19,8 +19,8 @@ const Header = (Props) => {
                     <input type="text"/>
                 </div>
                 <div className='profile'>
-                    <img className='basket' src={basket} alt="" />
-                    <img className='save' src={save} alt="" />
+                    <Link to='/basket'><img className='basket' src={basket} alt="" /></Link>
+                    <Link to='/favorites'><img className='save' src={save} alt="" /></Link>
                     <Link to='/sign_in'><img className='user_profile' src={user_profile} alt="" /></Link>
                 </div>
                 <div className='menu'>

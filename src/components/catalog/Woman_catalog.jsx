@@ -13,99 +13,122 @@ function Woman_catalog(props) {
             </div>
             <div className='woman_title'>Для неё</div>
             <div>
-                <div>
+                <div className='all_woman_product'>
                     <div className='woman_product_first_line'>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        <Link to='/product/:1'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:2'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:3'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     <div className='woman_product_second_line'>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        <Link to='/product/:1'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:2'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:3'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     <div className='woman_product_third_line'>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        <Link to='/product/:1'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:2'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:3'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                    
                     <div className='woman_product_fourth_line'>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        <Link to='/product/:1'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:2'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='woman_product_card'>
-                            <img src={woman_product} alt="" />
-                            <div className='woman_product_name_price'>
-                                <div className='woman_product_name'>Женские баскетбольные шорты</div>
-                                <div className='woman_price'>3 600 KGS</div>
+                        </Link>
+                        <Link to='/product/:3'>
+                            <div className='woman_product_card'>
+                                <img src={woman_product} alt="" />
+                                <div className='woman_product_name_price'>
+                                    <div className='woman_product_name'>Женские баскетбольные шорты</div>
+                                    <div className='woman_price'>3 600 KGS</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
