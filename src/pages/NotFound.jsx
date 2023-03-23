@@ -3,7 +3,7 @@ import './NotFound.css'
 
 const NotFound = (Props) => {
     return (
-        <div className="error">
+        <div className="error_bug">
             {/* <p>Ошибка 404. Страница не найдена </p>
             <div className="back">
                 <Link to='/'>Вернуться домой</Link>

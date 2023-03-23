@@ -33,9 +33,13 @@
     color: white;
     font-weight: bolder;
     font-size: 25px;
-    display: flex;
+    display: none;
     align-items: center;
     padding-left: 10px;
+}
+.man_clothes:hover .for_man {
+    display: flex;
+
 }
 .woman_clothes{
     background: url(../../assets/catalog/woman_clothes.png) no-repeat;
@@ -53,9 +57,12 @@
     color: white;
     font-weight: bolder;
     font-size: 25px;
-    display: flex;
+    display: none;
     align-items: center;
     padding-left: 10px;
+}
+.woman_clothes:hover .for_woman{
+    display: flex;
 }
 .kids_clothes_container{
     width: 100%;
@@ -78,7 +85,11 @@
     color: white;
     font-weight: bolder;
     font-size: 25px;
-    display: flex;
+    display: none;
     align-items: center;
     padding-left: 10px;
+}
+
+.kids_clothes:hover .for_kids{
+    display: flex;
 }
