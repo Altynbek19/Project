@@ -1,0 +1,84 @@
+.clothes_container{
+    margin: 110px;
+    margin-top: 0px;
+}
+.road{
+    display: flex;
+    gap: 50px;
+    margin: 45px;
+    margin-left: 0px;
+    color: black;
+}
+.road a{
+    color: black;
+}
+.man_woman_clothes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.man_clothes{
+    background: url(../../assets/catalog/man_clothes.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+}
+.man_clothes .for_man{
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.woman_clothes{
+    background: url(../../assets/catalog/woman_clothes.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+}
+.woman_clothes .for_woman{
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.kids_clothes_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.kids_clothes{
+    background: url(../../assets/catalog/kids_clothes.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;cursor: pointer;
+    display: flex;
+    align-items: end;
+}
+.kids_clothes .for_kids{   
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}

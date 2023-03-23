@@ -1,0 +1,33 @@
+.kids_catalog_container{
+    margin: 175px;
+    margin-top: 0px;
+
+}
+.kids_title{
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.kids_product_first_line, .kids_product_second_line, .kids_product_third_line, .kids_product_fourth_line{
+    display: flex;
+    gap: 20px;
+}
+.kids_product_card{
+    margin-top: 100px;
+    width: 400px;
+}
+.kids_product_card img{
+    width: 400px;
+    height: 400px;
+}
+
+.kids_product_name_price{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.kids_price{
+    font-weight: bolder;
+    display: flex;
+    align-items: end;
+}

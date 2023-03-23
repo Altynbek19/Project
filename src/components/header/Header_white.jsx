@@ -13,7 +13,7 @@ const Header_white = (Props) => {
         <header>
             <div className="header_logo">
                 <div className='logo'>
-                    <img src={logo} alt="" />
+                    <Link to='/'><img src={logo} alt="" /></Link>
                 </div>
                 <div className='search_logo'>
                     <input type="text"/>
@@ -28,11 +28,11 @@ const Header_white = (Props) => {
                 </div>
             </div>
                 <ul className='product'>
-                    <Link to="/product/12">Одежда</Link>
-                    <Link to="/category" href="">Фитнес</Link>
-                    <a href="">Акксессуары</a>
-                    <a href="">Скидки</a>
-                    <a href="">Горнолыжная одежда</a>
+                    <Link to="/Clothes">Одежда</Link>
+                    <Link to="*">Фитнес</Link>
+                    <Link to="*">Акксессуары</Link>
+                    <Link to="*">Скидки</Link>
+                    <Link to="*">Горнолыжная одежда</Link>
                 </ul>
         </header>
     );

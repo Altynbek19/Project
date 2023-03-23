@@ -1,0 +1,30 @@
+.error{
+    padding: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+/* .back a{
+    color: black;
+} */
+.error_cod{
+    font-size: 150px;
+}
+
+.error_mess_back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.error_mess{
+    font-size: 50px;
+}
+.back{
+    margin-top: 10px;
+    display: flex;
+    height: 30px;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
