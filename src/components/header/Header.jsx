@@ -21,7 +21,7 @@ const Header = (Props) => {
                 <div className='profile'>
                     <Link to='/basket'><img className='basket' src={basket} alt="" /></Link>
                     <Link to='/favorites'><img className='save' src={save} alt="" /></Link>
-                    <Link to='/sign_in'><img className='user_profile' src={user_profile} alt="" /></Link>
+                    <Link to='/profile'><img className='user_profile' src={user_profile} alt="" /></Link>
                 </div>
                 <div className='menu'>
                     <img src={menu} alt="" />

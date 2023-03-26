@@ -1,14 +1,37 @@
-.container{
+.container_reg_image{
+    display: flex;
+}
+.choose_log_in_register_icon a{
+    color: rgba(23, 34, 31, 1);
+}
+.container_1{
+    width: 50%;
+    height: 100%;
+}
+.container_2{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.container_icon{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(153, 194, 255, 0.24);
     border-radius: 8px;
     padding-left: 20px;
     padding-bottom: 40px;
     padding-top: 6px;
     box-sizing: border-box;
     padding-right: 20px;
+    background-color: red;
+}
+.choose_log_in{
+    border-bottom: 2px solid rgba(154, 255, 74, 1);
+    cursor: pointer;
+}
+.choose_register{
+    cursor: pointer;
 }
 .exit{
     display: flex;
@@ -19,7 +42,10 @@
 .remember_text{
     margin: 0px;
 }
-
+.choose_log_in_register{
+    display: flex;
+    gap: 20px;
+}
 .Sign_in{
     color: white;
 }
@@ -27,7 +53,7 @@ input{
     background: none;
     width: 360px;
     height: 30px;
-    border: 1px solid white;
+    border: 1px solid rgba(23, 34, 31, 1);
     border-radius: 3px;
     padding-left: 10px;
 }
@@ -35,8 +61,12 @@ input{
     background-color: black;
     min-width: 360px;
     min-height: 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 10px;
+}
+.sign_in_input{
+    border-radius: 5px;
+    color: white;
 }
 
 .Sign_in:hover{
@@ -70,37 +100,28 @@ a{
     column-gap: 2px;
 }
 
-.mark{
-    width: 18px;
-    height: 18px;
-}
 
-.contact{
+.contact_social_net{
+    width: 360px;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(23, 34, 31, 1);
+}
+.contact_auth{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     width: 360px;
+    margin-bottom: 50px;
 }
 
 .social_net{
     display: flex;
     justify-content: space-evenly;
 }
-
-.register{
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-}
-.reg{
-    background: none;
-    border: 1px solid white;
-    box-sizing: border-box;
-    width: 360px;
-    height: 38px;
-    border-radius: 3px;
-}
-
-.reg:hover{
-    background-color: rgba(255, 255, 255, 0.259);
+.reg_image{
+    background: url(/src/assets/auth/reg_image.png) no-repeat;
+    background-size: cover;
+    width: 600px;
 }

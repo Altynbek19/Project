@@ -10,7 +10,7 @@ import recommendations_2 from '../../assets/catalog/recommendations_2.png'
 import recommendations_3 from '../../assets/catalog/recommendations_3.png'
 import recommendations_4 from '../../assets/catalog/recommendations_4.png'
 import recommendations_5 from '../../assets/catalog/recommendations_5.png'
-import './product.css'
+import './Product.css'
 import {useParams} from "react-router-dom"
 import { Link } from 'react-router-dom';
 
@@ -32,7 +32,7 @@ function Product(props) {
                         <img className='product_top' src={product_1_top} alt="" />
                         <img className='product_behind' src={product_1_behind} alt="" />
                     </div>
-                    <img src={product_1_font} alt="" />
+                    <div className='big_img_product'><img src={product_1_font} alt="" /></div>
                 </div>
                 <div className='product_info'>
                     <div className='card_product'>

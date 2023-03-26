@@ -1,13 +1,16 @@
 import {useForm} from "react-hook-form";
 import './Registration.css'
+import exit from '/src/assets/auth/exit.png'
 import mark from '/src/assets/mark.png'
 import google from '/src/assets/auth/google.png'
 import instagram from '/src/assets/auth/instagram.png'
 import facebook from '/src/assets/auth/facebook.png'
+import reg_image from '/src/assets/auth/reg_image.png'
 import { auth } from "../../Firebase";
 import { createUserWithEmailAndPassword ,sendEmailVerification   } from 'firebase/auth';
 import {signInWithGoogle} from '../../Firebase'
 import { doc, setDoc } from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 
 const Registration = (props) => {
@@ -23,11 +26,18 @@ const Registration = (props) => {
     }
 
     console.log(errors)
+// 
+
 
     return (
-        <div className='cc'>
-            <h2>Регистрация</h2>   
-            <form className="modal-form" onSubmit={handleSubmit(onSubmit)}>         
+        <div className="container_reg_image">
+            <div className="container_1">
+                <div className='container'>
+                    <div className="choose_log_in_register">
+                        <Link to='/sign_in_icon'><h3 className='choose_log_in_2'>Войти</h3></Link>   
+                        <Link to='/register_icon'><h3 className='choose_register_2'>Регистрация</h3></Link> 
+                    </div>  
+                    <form className="modal-form" onSubmit={handleSubmit(onSubmit)}>         
             <div className='name'>
                 <h4 htmlFor="fullname">ФИО</h4>
                 <input 
@@ -61,6 +71,19 @@ const Registration = (props) => {
                 />
                 {errors.email && <span className="error" role="alert">{errors.email?.message}</span>}
             </div>
+            {/* <div className='phone'>
+                <h4>Телефон</h4>
+                <input type="text" name="password" placeholder='+996 ххх хх хх хх'
+                {...register("number", {
+                    required: "Параметр обязателен",
+                    maxLength: {
+                    value: 13,
+                    message: "Минимальная длина пароля 13 символов"
+                    }
+                })}
+                />
+                {errors.password && <span className="error" role="alert">{errors.number?.message}</span>}
+            </div> */}
             <div className='new_password'>
                 <h4>Создать пароль</h4>
                 <input type="password" name="password" placeholder='Введите пароль'
@@ -93,35 +116,16 @@ const Registration = (props) => {
                     <input className="Sign_in_input" type="submit" name="submit" value="Зарегестрироваться"/>
             </div>
             </form>
-            <div className='forget'>
-                <div className='remember'>
-                    <input  className="remember_inp" type="checkbox" />
-                    <h5>Запомнить меня</h5>
-                </div>
-                <div><a href="#" className='forget_pass'>Забыли пароль?</a></div>
-            </div>
-
-            <div>
-                <div className='contact'>
-                    <h5>Войти с помощью</h5>
-                </div>
-                <div className='social_net'>
-                    <div>
-                        <img onClick={signInWithGoogle} src={google} alt="" />
-                    </div>
-                    <div>
-                        <img src={instagram} alt="" />
-                    </div>
-                    <div>
-                        <img src={facebook} alt="" />
-                    </div>
-                </div>
-            </div>
             <div className='register'>
                 <div className="a_have_not">
-                    <a href="#" >У меня есть аккаунт</a>
+                    <Link to='/sign_in'><a href="" >У меня есть аккаунт</a></Link>
                 </div>
                 <button className='reg'>Войти</button>
+            </div>
+                </div>
+            </div>
+            <div className="container_2">
+                    <img src={reg_image} alt="" className="reg_image"/>
             </div>
         </div>
     )

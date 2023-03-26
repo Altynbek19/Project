@@ -1,5 +1,6 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import exit from '/src/assets/auth/exit.png'
 
 const Password_recovery_email = (props) => {
 

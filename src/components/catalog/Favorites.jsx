@@ -19,7 +19,7 @@ function Favorites(props) {
                         </div>
                         <div className='favorites_product'>
                             <strong>
-                            Нет товаров в корзинке.
+                            Нет товаров в избранных.
                             </strong>
                         </div>
                     </div>

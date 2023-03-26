@@ -94,10 +94,22 @@
 
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 950px){
     .search_logo input{
         width: 340px;
         background-position: 340px;
+    }
+    .product_black a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 821px){
+    .search_logo input{
+        width: 340px;
+        background-position: 340px;
+    }
+    .product_black a{
+        font-size: 10px;
     }
 }
 

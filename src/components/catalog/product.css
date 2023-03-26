@@ -32,6 +32,10 @@
     width: 100px;
     padding: 20px;
 }
+.big_img_product img{
+    width: 700px;
+    height: 700px;
+}
 .product_img{
     display: flex;
     flex-direction: column;
@@ -159,4 +163,663 @@
     margin-top: 100px;
     width: 200px;
     height: 200px;
+}
+
+@media screen and (max-width: 1280px) {
+    .about_product{
+        padding: 100px 300px;
+    }
+    .big_img_product img{
+        width: 500px;
+        height: 500px;
+    }
+    .product_img img{
+        width: 70px;
+    }
+    .product_full_img{
+        margin-right: 40px;
+    }
+    .product_page{
+        margin-left: -40px;
+    }
+    .all_recommendations_product img{
+        width: 150px;
+        height: 150px;
+
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3, .recommendations_product_4, .recommendations_product_5{
+        margin-left: 50px;
+    }
+    .product_info h1{
+        font-size: 20px;
+    }
+    .review{
+        height: 80px;
+    }
+    .card_product{
+        height: 350px;
+    }
+    .product_box{
+        height: 650px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .big_img_product img{
+        width: 300px;
+        height: 300px;
+    }
+    .product_img img{
+        width: 50px;
+    }
+    .product_full_img{
+        margin-right: 40px;
+    }
+    .product_page{
+        margin-left: -80px;
+    }
+    .all_recommendations_product img{
+        width: 100px;
+        height: 100px;
+
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3, .recommendations_product_4, .recommendations_product_5{
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    .recommendations h1{
+        font-size: 25px;
+    }
+    .product_info h1{
+        font-size: 20px;
+    }
+    .info strong{
+        font-size: 13px;
+    }
+    .color_white, .color_black{
+        width: 20px;
+        height: 20px;
+    }
+    .product_info{
+        height: 430px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .big_img_product img{
+        width: 300px;
+        height: 300px;
+    }
+    .product_img img{
+        width: 50px;
+    }
+    .product_full_img{
+        margin-right: 40px;
+    }
+    .product_page{
+        margin-left: -80px;
+    }
+    .all_recommendations_product img{
+        width: 100px;
+        height: 100px;
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3, .recommendations_product_4, .recommendations_product_5{
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    .recommendations h1{
+        font-size: 25px;
+    }
+    .product_info h1{
+        font-size: 20px;
+    }
+    .info{
+        padding-bottom: 40px;
+    }
+    .info strong{
+        font-size: 13px;
+    }
+    .product_box{
+        height: 540px;
+    }
+    .card_product{
+        height: 300px;
+    }
+    .color_white, .color_black{
+        width: 20px;
+        height: 20px;
+    }
+    .product_info{
+        height: 410px;
+    }
+    .review{
+        height: 50px;
+    }
+    .review_mess{
+        font-size: 15px;
+    }
+    .star img{
+        width: 20px;
+        height: 20px;
+    }
+    .about_product{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .big_img_product img{
+        width: 300px;
+        height: 300px;
+    }
+    .product_img img{
+        width: 50px;
+    }
+    .product_full_img{
+        margin-right: 40px;
+    }
+    .product_page{
+        margin-left: -80px;
+    }
+    .all_recommendations_product img{
+        width: 100px;
+        height: 100px;
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3, .recommendations_product_4, .recommendations_product_5{
+        margin-left: 40px;
+        font-size: 10px;
+    }
+    .recommendations h1{
+        font-size: 25px;
+    }
+    .product_info h1{
+        font-size: 20px;
+    }
+    .info{
+        padding-bottom: 40px;
+    }
+    .info strong{
+        font-size: 13px;
+    }
+    .product_box{
+        height: 540px;
+    }
+    .card_product{
+        height: 300px;
+    }
+    .color_white, .color_black{
+        width: 20px;
+        height: 20px;
+    }
+    .product_info{
+        height: 410px;
+    }
+    .select_input{
+        gap: 10px;
+    }
+    .select_input select{
+        width: 140px;
+    }
+    .review{
+        height: 50px;
+    }
+    .review_mess{
+        font-size: 15px;
+    }
+    .star img{
+        width: 20px;
+        height: 20px;
+    }
+    .about_product{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width: 820px) {
+    
+    .big_img_product img{
+        width: 300px;
+        height: 300px;
+    }
+    .product_img img{
+        width: 50px;
+    }
+    .product_full_img{
+        margin-right: 40px;
+    }
+    .product_page{
+        margin-left: -80px;
+    }
+    .all_recommendations_product img{
+        width: 100px;
+        height: 100px;
+    }
+    .all_recommendations_product{
+        padding-left: 70px;
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3, .recommendations_product_4, .recommendations_product_5{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .recommendations h1{
+        font-size: 25px;
+    }
+    .product_info h1{
+        font-size: 20px;
+    }
+    .info{
+        padding-bottom: 40px;
+    }
+    .info strong{
+        font-size: 13px;
+    }
+    .product_box{
+        height: 540px;
+    }
+    .card_product{
+        height: 300px;
+    }
+    .color_white, .color_black{
+        width: 20px;
+        height: 20px;
+    }
+    .product_info{
+        height: 410px;
+    }
+    .review{
+        height: 50px;
+    }
+    .review_mess{
+        font-size: 15px;
+    }
+    .star img{
+        width: 20px;
+        height: 20px;
+    }
+    .about_product{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .big_img_product img{
+        width: 300px;
+        height: 300px;
+    }
+    .product_img img{
+        width: 50px;
+    }
+    .product_full_img{
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .product_page{
+        margin-left: -80px;
+    }
+    .all_recommendations_product img{
+        width: 100px;
+        height: 100px;
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3, .recommendations_product_4, .recommendations_product_5{
+        margin-left: 40px;
+        font-size: 10px;
+    }
+    .recommendations h1{
+        font-size: 25px;
+    }
+    .product_info h1{
+        font-size: 30px;
+    }
+    .info{
+        padding-bottom: 40px;
+    }
+    .info strong{
+        font-size: 17px;
+    }
+    .product_box{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+    .card_product{
+        height: 300px;
+    }
+    .color_white, .color_black{
+        width: 30px;
+        height: 30px;
+    }
+    .product_info{
+        height: 610px;
+        padding-left: 110px;
+        padding-right: 0px;
+        width: 710px;
+        margin-top: 0px;
+    }
+    .all_recommendations_product{
+        padding-left: 30px;
+    }
+    .select_input{
+        display: flex;
+        justify-content: space-between;
+    }
+    .select_input select{
+        width: 240px;
+        height: 40px;
+    }
+    .review{
+        height: 50px;
+    }
+    .review_mess{
+        font-size: 30px;
+    }
+    .star img{
+        width: 30px;
+        height: 30px;
+    }
+    .about_product{
+        margin-top: 100px;
+        padding-top: 100px;
+        font-size: 12px;
+    }
+    .big_img_product img{
+        width: 500px;
+        height: 500px;
+    }
+    .product_img img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .product_font{
+        border-bottom: 2px solid rgba(154, 255, 74, 1);
+    }
+    
+    .product_main, .product_top, .product_behind{
+        border-bottom: 1px solid rgba(227, 227, 227, 1);
+    }
+}
+@media screen and (max-width: 540px) {
+    .big_img_product img{
+        width: 300px;
+        height: 300px;
+    }
+    .product_img img{
+        width: 50px;
+    }
+    .product_full_img{
+        width: 300px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .product_page{
+        margin-left: -80px;
+    }
+    .all_recommendations_product img{
+        width: 100px;
+        height: 100px;
+    }
+    .recommendations_product_1 img, .recommendations_product_2 img,.recommendations_product_3 img{
+        width: 150px;
+        height: 150px;
+
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3{
+        font-size: 12px;
+    }
+    .recommendations_product_4, .recommendations_product_5{
+        display: none;
+    }
+    .recommendations h1{
+        font-size: 30px;
+    }
+    .product_info h1{
+        font-size: 30px;
+    }
+    .info{
+        padding-bottom: 40px;
+    }
+    .info strong{
+        font-size: 17px;
+    }
+    .product_box{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+    .card_product{
+        height: 300px;
+    }
+    .color_white, .color_black{
+        width: 30px;
+        height: 30px;
+    }
+    .product_info{
+        height: 610px;
+        padding-left: 95px;
+        padding-right: 0px;
+        width: 510px;
+        margin-top: 0px;
+    }
+    .all_recommendations_product{
+        padding-left: 30px;
+    }
+    .select_input{
+        display: flex;
+        justify-content: space-between;
+    }
+    .select_input select{
+        width: 140px;
+        height: 20px;
+    }
+    .review{
+        height: 50px;
+    }
+    .review_mess{
+        font-size: 25px;
+    }
+    .star img{
+        width: 25px;
+        height: 25px;
+    }
+    .about_product{
+        margin-top: 100px;
+        padding-top: 100px;
+        font-size: 12px;
+        padding: 100px 100px;
+        padding-left: 200px;
+    }
+    .big_img_product img{
+        width: 300px;
+        height: 300px;
+    }
+    .product_img img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .product_font{
+        border-bottom: 2px solid rgba(154, 255, 74, 1);
+    }
+    
+    .product_main, .product_top, .product_behind{
+        border-bottom: 1px solid rgba(227, 227, 227, 1);
+    }
+}    
+@media screen and (max-width: 415px) {
+    
+    .big_img_product img{
+        width: 200px;
+        height: 200px;
+    }
+    .product_img img{
+        width: 30px;
+        height: 30px;
+    }
+    .product_full_img{
+        width: 300px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .product_page{
+        margin-left: -80px;
+    }
+    .all_recommendations_product img{
+        width: 100px;
+        height: 100px;
+    }
+    .recommendations_product_1 img, .recommendations_product_2 img,.recommendations_product_3 img{
+        width: 100px;
+        height: 100px;
+
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3{
+        font-size: 9px;
+    }
+    .recommendations_product_4, .recommendations_product_5{
+        display: none;
+    }
+    .recommendations h1{
+        padding-left: 80px;
+        font-size: 20px;
+    }
+    .product_info h1{
+        font-size: 30px;
+    }
+    .info{
+        padding-bottom: 40px;
+    }
+    .info strong{
+        font-size: 17px;
+    }
+    .product_box{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+    .card_product{
+        height: 300px;
+    }
+    .color_white, .color_black{
+        width: 30px;
+        height: 30px;
+    }
+    .product_info{
+        height: 610px;
+        padding-left: 110px;
+        padding-right: 0px;
+        width: 350px;
+        margin-top: 0px;
+    }
+    .all_recommendations_product{
+        padding-left: 30px;
+    }
+    .select_input{
+        display: flex;
+        justify-content: space-between;
+    }
+    .select_input select{
+        width: 140px;
+        height: 20px;
+    }
+    .review{
+        height: 50px;
+    }
+    .review_mess{
+        font-size: 25px;
+    }
+    .star img{
+        width: 25px;
+        height: 25px;
+    }
+    .about_product{
+        margin-top: 100px;
+        padding-top: 100px;
+        font-size: 12px;
+        padding: 100px 100px;
+        padding-left: 200px;
+    }
+}
+@media screen and (max-width: 394px) {
+    .product_info{
+        height: 610px;
+        padding-left: 100px;
+        padding-right: 0px;
+        width: 350px;
+        margin-top: 0px;
+    }
+    .product_info h1{
+        font-size: 25px;
+    }
+    .recommendations_product_1 img, .recommendations_product_2 img, .recommendations_product_3 img{
+        width: 90px;
+        height: 90px;
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 376px) {
+    .product_info{
+        height: 610px;
+        padding-left: 90px;
+        padding-right: 0px;
+        width: 350px;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .product_info{
+        height: 610px;
+        padding-left: 110px;
+        padding-right: 0px;
+        width: 300px;
+        margin-top: 0px;
+    }
+    .recommendations_product_1 img, .recommendations_product_2 img, .recommendations_product_3 img{
+        width: 80px;
+        height: 80px;
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3{
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .product_img img{
+        width: 20px;
+        height: 20px;
+    }
+    .big_img_product img{
+        width: 150px;
+        height: 150px;
+    }
+    .product_info{
+        height: 610px;
+        padding-left: 96px;
+        padding-right: 0px;
+        width: 250px;
+        margin-top: 0px;
+    }
+    .product_info h1{
+        font-size: 20px;
+    }
+    .select_input select{
+        width: 100px;
+    }
+    .star img{
+        width: 13px;
+        height: 13px;
+    }
+    .review_mess{
+        font-size: 15px;
+    }
+    .recommendations_product_1 img, .recommendations_product_2 img, .recommendations_product_3 img{
+        width: 70px;
+        height: 70px;
+    }
+    .recommendations_product_1, .recommendations_product_2, .recommendations_product_3{
+        font-size: 5px;
+        margin-left: 20px;
+    }
+    .all_recommendations_product{
+        margin-top: -90px;
+        margin-bottom: -100px;
+        margin-left: 20px;
+    }
+
 }

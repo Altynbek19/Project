@@ -13,7 +13,11 @@ import Basket from "../components/catalog/Basket.jsx";
 import Favorites from "../components/catalog/Favorites.jsx";
 import Kids_catalog from "../components/catalog/Kids_catalog";
 import Authorization from "../components/auth/Authorization.jsx";
+import Authorization_icon from "../components/auth/Authorization_icon.jsx";
 import Registration from "../components/auth/Registration";
+import Registration_icon from "../components/auth/Registration_icon";
+import Profile from '../components/auth/Profile/Profile';
+import Home from '../pages/Home'
 const path = (import.meta.env.PROD)? '/project' : ''
   
 const router = createBrowserRouter([
@@ -22,7 +26,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Header_white />
-        <Main />
+        <Home />
         <Footer />
       </div>
     )
@@ -115,20 +119,30 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/sign_in`,
+    path: `${path}/sign_in_icon`,
     element: (
       <div>
         <Header_white />
-        <Authorization />
+        <Authorization_icon />
       </div>
     )
   },
   {
-    path: `${path}/register`,
+    path: `${path}/register_icon`,
     element: (
       <div>
         <Header_white />
-        <Registration />
+        <Registration_icon />
+      </div>
+    )
+  },
+  {
+    path: `${path}/profile`,
+    element: (
+      <div>
+        <Header_white />
+        <Main />
+        <Footer/>
       </div>
     )
   },

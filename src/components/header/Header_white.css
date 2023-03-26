@@ -66,6 +66,41 @@ header{
     font-size: 13px; /*размер шрифта*/
 }
 
+.burger_btn{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+    top: 15px;
+    right: 60px;
+}
+.burger_btn::before{
+    content: '';
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+.burger_btn span{
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    top: 13px;
+    width: 30px;
+}
+.burger_btn::after{
+    content: '';
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+}
+
+
+
 
 @media screen and (max-width: 1210px) {
     .search_logo input{  

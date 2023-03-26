@@ -7,6 +7,7 @@ import filtersearch from '/src/assets/header/filtersearch.png'
 import menu from '/src/assets/header/menu_white.png'
 import '/src/components/header/Header_white.css'
 import {Link} from 'react-router-dom'
+import Menu from './menu/Menu'
 
 const Header_white = (Props) => {
     return (
@@ -21,16 +22,14 @@ const Header_white = (Props) => {
                 <div className='profile'>
                     <Link to='/basket'><img className='basket' src={basket_white} alt="" /></Link>
                     <Link to='/favorites'><img className='save' src={save} alt="" /></Link>
-                    <Link to='/sign_in'><img className='user_profile' src={user_profile} alt="" /></Link>
+                    <Link to='/profile'><img className='user_profile' src={user_profile} alt="" /></Link>
                 </div>
                 <div className='menu'>
                     <img src={menu} alt="" />
                 </div>
-                {/* <nav>
-                    <div className="burger_btn">
+                    {/* <div className="burger_btn">
                         <span></span>
-                    </div>
-                </nav> */}
+                    </div> */}
             </div>
                 <div className='product_container'>
                     <ul className='product'>
@@ -41,6 +40,7 @@ const Header_white = (Props) => {
                         <Link to="*">Горнолыжная одежда</Link>
                     </ul>
                 </div>
+
         </header>
     );
 };
