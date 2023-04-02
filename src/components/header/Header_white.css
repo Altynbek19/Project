@@ -65,7 +65,9 @@ header{
     height: 20px; /*высота строки ввода*/   
     font-size: 13px; /*размер шрифта*/
 }
-
+.search_logo input:focus{
+    background: none;
+}
 .burger_btn{
     width: 30px;
     height: 30px;

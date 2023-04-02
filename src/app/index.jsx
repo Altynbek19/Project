@@ -18,6 +18,10 @@ import Registration from "../components/auth/Registration";
 import Registration_icon from "../components/auth/Registration_icon";
 import Profile from '../components/auth/Profile/Profile';
 import Home from '../pages/Home'
+import About_us from "../components/content/About_us.jsx";
+import Return from "../components/content/Return.jsx";
+import Guarantee from "../components/content/Guarantee.jsx";
+import Brands from "../components/content/Brands.jsx";
 const path = (import.meta.env.PROD)? '/project' : ''
   
 const router = createBrowserRouter([
@@ -142,6 +146,47 @@ const router = createBrowserRouter([
       <div>
         <Header_white />
         <Main />
+        {/* <Authorization_icon/> */}
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `${path}/about_us`,
+    element: (
+      <div>
+        <Header_white />
+        <About_us />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `${path}/return`,
+    element: (
+      <div>
+        <Header />
+        <Return />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `${path}/guarantee`,
+    element: (
+      <div>
+        <Header />
+        <Guarantee />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `${path}/brands`,
+    element: (
+      <div>
+        <Header />
+        <Brands />
         <Footer/>
       </div>
     )

@@ -2,6 +2,7 @@ import '/src/components/footer/Footer.css'
 import twitter from '/src/assets/footer/twitter.png'
 import facebook from '/src/assets/footer/facebook.png'
 import instagram from '/src/assets/footer/instagram.png'
+import { Link } from 'react-router-dom'
 
 const Footer = (Props) => {
     return (
@@ -10,23 +11,22 @@ const Footer = (Props) => {
                 <div className='more_inf'>
                     <ul>
                         <strong>О компании</strong>
-                        <a>О нас</a>
+                        <Link to='/about_us'>О нас</Link>
                         <a>Новости</a>
                         <a>Наши партнеры</a>
                     </ul>
                     <ul>
                         <strong>О покупке</strong>
                         <a>Доставка и оплата</a>
-                        <a>Возврат</a>
-                        <a>Гарантия</a>
+                        <Link to='/return'>Возврат</Link>
+                        <Link to='/guarantee'>Гарантия</Link>
                     </ul>
                     <ul>
-                        <strong>Бренды</strong>
-                        <a>Adidas</a>
-                        <a>Nike</a>
-                        <a>New Balance</a>
-                        <a>Puma</a>
-                        <a>Fila</a>
+                        <strong><Link to='/brands'>Бренды</Link></strong>
+                        <Link to='/brands'>Adidas</Link>
+                        <Link to='/brands'>Nike</Link>
+                        <Link to='/brands'>Reebok</Link>
+                        <Link to='/brands'>Puma</Link>
                     </ul>
                     <ul>
                         <strong>Наши контакты</strong>

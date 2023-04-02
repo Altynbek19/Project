@@ -1,0 +1,16 @@
+.guarantee_container{
+    padding-left: 175px;
+    padding-right: 175px;
+}
+.title_guarantee{
+    margin-bottom: 50px;
+}
+.info_guarantee{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.text_guarantee{
+    margin-bottom: 140px;
+    margin-top: 80px;
+}

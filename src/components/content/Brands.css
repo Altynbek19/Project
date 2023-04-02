@@ -1,0 +1,57 @@
+.brands_container{
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 70px;
+    background: linear-gradient(270deg, #FFFFFF 0%, #FEFFFD 36.98%, #B4FF78 80.73%, #9AFF4A 100%);
+
+}
+.brands_container .road{
+    margin-top: 0px;
+    padding-top: 45px;
+}
+.title_brands{
+    margin-top: 0px;
+    padding-top: 80px;
+    font-size: 50px;
+}
+.text_brands{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+.nike_container, .adidas_container, .puma_container, .reebok_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nike_img{
+    width: 500px;
+    height: 500px;
+    background: url(./../../assets/content/nike.png);
+    background-size: cover;
+}
+.adidas_img{
+    width: 500px;
+    height: 500px;
+    background: url(./../../assets/content/adidas.png);
+    background-size: cover;
+}
+.puma_img{
+    width: 500px;
+    height: 500px;
+    background: url(./../../assets/content/puma.png);
+    background-size: cover;
+}
+.reebok_img{
+    width: 500px;
+    height: 500px;
+    background: url(./../../assets/content/reebok.png);
+    background-size: cover;
+}
+.nike, .adidas, .puma, .reebok{
+    font-size: 20px;
+}
+.text_brands strong{
+    font-size: 25px;
+}
