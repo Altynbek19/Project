@@ -1,6 +1,30 @@
-.clothes_container{
-    margin: 110px;
-    margin-top: 0px;
+.catalog_container{
+    gap: 100px;
+}
+.all_catalog_container{
+    margin-bottom: 100px;
+}
+.all_catalog_container .road{
+    margin-left: 135px;
+}
+.card{
+    color: black;
+    width: 360px;
+    max-width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 350px;
+}
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 100px;
 }
 .road{
     display: flex;
@@ -12,13 +36,14 @@
 .road a{
     color: black;
 }
-.man_woman_clothes{
+/* .man_woman_clothes{
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
 .man_clothes{
-    background: url(../../assets/catalog/man_clothes.png) no-repeat;
+    background: url(../../assets/catalog/man_clothes.png);
+    background-repeat: no-repeat;
     background-size: cover;
     width: 500px;
     height: 500px;
@@ -63,7 +88,7 @@
 }
 .woman_clothes:hover .for_woman{
     display: flex;
-}
+} */
 .kids_clothes_container{
     width: 100%;
     display: flex;
@@ -71,12 +96,15 @@
 
 }
 .kids_clothes{
-    background: url(../../assets/catalog/kids_clothes.png) no-repeat;
+    /* background: url(../../assets/catalog/kids_clothes.png) no-repeat; */
     background-size: cover;
-    width: 500px;
-    height: 500px;cursor: pointer;
+    width: 400px;
+    height: 400px;cursor: pointer;
     display: flex;
     align-items: end;
+}
+.kids_clothes img{
+    height: 250px;
 }
 .kids_clothes .for_kids{   
     background-color: rgba(0, 0, 0, 0.57);
@@ -92,6 +120,7 @@
 
 .kids_clothes:hover .for_kids{
     display: flex;
+    margin-left: -600px;
 }
 
 @media screen and (max-width: 1280px) {

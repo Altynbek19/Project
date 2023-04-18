@@ -1,6 +1,43 @@
 .home_container{
     display: flex;
+    height: 2000px;
+    background: url(./../assets/home/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+}
+.new img{
+    width: 300px;
+}
+.new_text_img{
     height: 500px;
-    justify-content: center;
+}
+.new{
+    width: 600px;
+    font-weight: bold;
+}
+.text_new{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 150px;
+    gap: 30px;
+}
+.new_coll{
+    rotate: 90deg;
+    padding-top: 100px;
+}
+.img_new{
+    display: flex;
+    align-items: end;
+}
+.big_man_img{
+    background: url(./../assets/home/big_man.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.new_big_img{
+    
 }

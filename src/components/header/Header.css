@@ -54,7 +54,7 @@
     display: block;
     border: white 1px solid;
     background-color: black;
-    color: black;
+    color: white;
     background-image: url(/src/assets/header/search_white.png);
     background-repeat: no-repeat; /*Убираем повтор изображения*/   
     background-position: 10px; /*Позиционируем*/

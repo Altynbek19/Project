@@ -7,7 +7,7 @@ import Header from "../components/header/Header"
 import Product from "../components/catalog/Product.jsx";
 import NotFound from "../pages/NotFound.jsx";
 import Clothes from '../components/catalog/Clothes'
-import Man_catalog from "../components/catalog/Man_catalog.jsx";
+import Category from "../components/catalog/Category.jsx";
 import Woman_catalog from "../components/catalog/Woman_catalog.jsx";
 import Basket from "../components/catalog/Basket.jsx";
 import Favorites from "../components/catalog/Favorites.jsx";
@@ -93,11 +93,11 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/man_catalog`,
+    path: `${path}/Category`,
     element: (
       <div>
         <Header />
-        <Man_catalog />
+        <Category />
         <Footer />
       </div>
     )
@@ -191,6 +191,16 @@ const router = createBrowserRouter([
       </div>
     )
   },
+  {
+    path: `/category/:category`,
+    element:(
+    <div>
+        <Header />
+        <Category />
+        <Footer/>
+    </div>
+    )
+  }
 ]);
 
 export default router;
