@@ -246,4 +246,7 @@
     .header_black .search_logo{
         display: none;
     }
+    .menu{
+        display: none;
+    }
 }

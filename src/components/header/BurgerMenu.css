@@ -6,8 +6,8 @@
         height: auto;
         position: fixed;
         top: 0;
-        left: 0;
-        background-color: rgb(30, 85, 180);
+        right: 0;
+        background: none;
         z-index: 999;
     }
     .btnclose {

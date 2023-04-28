@@ -263,8 +263,11 @@ header{
 }
 
 
-@media screen and (max-width: 280px){
+@media screen and (max-width: 999280px){
     .search_logo{
+        display: none;
+    }
+    .menu img{
         display: none;
     }
 }
