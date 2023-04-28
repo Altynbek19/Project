@@ -1,11 +1,36 @@
 .home_container{
     display: flex;
-    height: 2000px;
-    background: url(./../assets/home/background.png);
+    gap: 100px;
+    /* background: url(./../assets/home/background.png); */
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: black;
     padding: 100px;
+}
+.home_container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: orange;
+    width: 150px;
+    height: 50px;
+    border-radius: 16px;
+}
+.home_container a:hover{
+    background-color: orangered;
+}
+/* .to_catalog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 150px;
+    height: 50px;
+    border-radius: 16px;
+} */
+.img_home img{
+    width: 800px;
 }
 .new img{
     width: 300px;

@@ -72,7 +72,7 @@
 
 
 @media screen and (max-width: 1210px) {
-    .search_logo input{  
+    .header_black .search_logo input{  
         border: black 1px solid;
         display: flex;
         background-color: white;
@@ -89,7 +89,7 @@
         width: 400px;
         align-items: center;
     }
-    .search_logo{  
+    .header_black .search_logo{  
         display: flex;
         align-items: center;
         padding-right: 0px;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 950px){
-    .search_logo input{
+    .header_black .search_logo input{
         width: 340px;
         background-position: 340px;
     }
@@ -108,7 +108,7 @@
     }
 }
 @media screen and (max-width: 821px){
-    .search_logo input{
+    .header_black .search_logo input{
         width: 340px;
         background-position: 340px;
     }
@@ -128,7 +128,7 @@
         display: flex;
         flex-grow: 1;
     }
-    .search_logo input{
+    .header_black .search_logo input{
         display: flex;
         flex-grow: 1;
         width: 340px;
@@ -156,7 +156,7 @@
     }
 }
 @media screen and (max-width: 700px) {
-    .search_logo input {
+    .header_black .search_logo input {
         background-color: white;
         color: black;
         background-image: url(/src/assets/header/search.png);
@@ -171,12 +171,12 @@
         width: 300px;
     }
 
-    .search_logo{
+    .header_black .search_logo{
         margin-left: -30px;
     }
 }
 @media screen and (max-width: 540px) {
-    .header_logo{
+    .header_black .header_logo{
         display: flex;
         justify-content: space-between;
         background: none;
@@ -186,13 +186,13 @@
         display: flex;
         flex-grow: 1;
     }
-    .search_logo input{
+    .header_black .search_logo input{
         display: flex;
         flex-grow: 1;
         width: 240px;
         background-position: 240px;
     }
-    .search_logo{
+    .header_black .search_logo{
         margin-left: -70px;
     }
     .menu{
@@ -216,25 +216,25 @@
     }
 }
 @media screen and (max-width:520px){
-    .search_logo input{
+    .header_black .search_logo input{
         width: 200px;
         background-position: 200px;
     }
 }
 @media screen and (max-width: 470px){
-    .search_logo input{
+    .header_black .search_logo input{
         width: 100px;
         background-position: 100px;
     }
 
-    .header_logo{
+    .header_black .header_logo{
         padding-left: 20px;
     }
 }
 
 
 @media screen and (max-width: 360px){
-    .search_logo input{
+    .header_black .search_logo input{
         width: 80px;
         background-position: 80px;
     }
@@ -243,7 +243,7 @@
 
 
 @media screen and (max-width: 280px){
-    .search_logo{
+    .header_black .search_logo{
         display: none;
     }
 }

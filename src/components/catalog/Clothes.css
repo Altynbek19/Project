@@ -97,16 +97,16 @@
 }
 .kids_clothes{
     /* background: url(../../assets/catalog/kids_clothes.png) no-repeat; */
-    background-size: cover;
+    /* background-size: cover; */
     width: 400px;
     height: 400px;cursor: pointer;
     display: flex;
     align-items: end;
 }
 .kids_clothes img{
-    height: 250px;
+    width: 400px;
 }
-.kids_clothes .for_kids{   
+.kids_clothes .for_kids{
     background-color: rgba(0, 0, 0, 0.57);
     width: 100%;
     height: 60px;
@@ -120,7 +120,7 @@
 
 .kids_clothes:hover .for_kids{
     display: flex;
-    margin-left: -600px;
+    margin-left: -250px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -155,6 +155,12 @@
         display: flex;
         justify-content: center;
     }
+    .card img{
+        width: 500px;
+    }
+    .card{
+        width: 550px;
+    }
 }
 @media screen and (max-width: 770px) {
     .clothes_container{
@@ -174,6 +180,15 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    .all_catalog_container{
+        margin-left: -50px;
+    }
+    .card{
+        width: 350px;
+    }
+    .card img{
+        width: 350px;
+    }
 }
 @media screen and (max-width: 420px) {
     .man_woman_clothes, .kids_clothes_container{
@@ -188,14 +203,37 @@
         margin-left: 30px;
         margin-right: 30px;
     }
+    .card img{
+        width: 280px;
+    }
+    .all_catalog_container{
+        margin-left: -80px;
+    }
 }
 @media screen and (max-width: 400px) {
     .clothes_container{
         margin-left: 19px;
         margin-right: 19px;
     }
+    .all_catalog_container{
+        margin-left: -60px;
+    }
+    .card{
+        width: 280px;
+    }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 376px) {
+    .all_catalog_container{
+        margin-left: -50px;
+    }
+    .card img{
+        width: 240px;
+    }
+    .card{
+        width: 240px;
+    }
+}
+@media screen and (max-width: 281px) {
     .man_woman_clothes, .kids_clothes_container{
         flex-direction: column; 
         width: 200px;
@@ -207,5 +245,11 @@
     .clothes_container{
         margin-left: 40px;
         margin-right: 40px;
+    }
+    .all_catalog_container{
+        margin-left: -90px;
+    }
+    .card img{
+        width: 200px;
     }
 }

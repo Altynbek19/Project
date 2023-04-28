@@ -30,29 +30,29 @@ function Clothes(props) {
 
     const showAllCategory = categories.map((category, index) => {
     return (
-        <div className='catalog_container'>
-            <div className='kids_clothes_container'>
-                    <Link to={`/category/${category.id}`}>
-                        <div className='kids_clothes'>
-                                <img src={category.photo} alt="" />
-                            <div className='for_kids'>{category.name}</div>
-                        </div>
-                    </Link>
-                </div>
-        </div>
         // <div className='catalog_container'>
-        //     <Link to={`/category/${category.id}`}>
-        //             <Card text="qwerty" key={index}>
-        //                 <Card.Img variant="top" src={category?.photo} />
-        //                 <Card.Body>
-        //                     <Card.Title>{category.name}</Card.Title>
-        //                     <Card.Text>
-        //                         {category.description}
-        //                     </Card.Text>
-        //                 </Card.Body>
-        //             </Card>
-        //         </Link>
+        //     <div className='kids_clothes_container'>
+        //             <Link to={`/category/${category.id}`}>
+        //                 <div className='kids_clothes'>
+        //                         <img src={category.photo} alt="" />
+        //                     <div className='for_kids'>{category.name}</div>
+        //                 </div>
+        //             </Link>
+        //         </div>
         // </div>
+        <div className='catalog_container'>
+            <Link to={`/category/${category.id}`}>
+                    <Card text="qwerty" key={index}>
+                        <Card.Img variant="top" src={category?.photo} />
+                        <Card.Body>
+                            <Card.Title>{category.name}</Card.Title>
+                            <Card.Text>
+                                {category.description}
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Link>
+        </div>
         // <div className='clothes_container'>
         //     <div className='road'>
         //         <div><Link to='/'>Главная</Link></div>
