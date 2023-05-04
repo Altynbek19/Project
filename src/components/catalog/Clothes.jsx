@@ -86,7 +86,7 @@ function Clothes(props) {
             <div className="all_catalog_container">
                 <div className='road'>
                     <div><Link to='/'>Главная</Link></div>
-                    <div><Link to='/Clothes'>Одежда</Link></div>
+                    <div><Link to='/Category'>Одежда</Link></div>
                 </div>
                 <CardGroup>
                     {showAllCategory}

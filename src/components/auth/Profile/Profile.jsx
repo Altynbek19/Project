@@ -5,6 +5,7 @@ import { useReducer } from 'react'
 import Modal from "../../../components/Modal";
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from '../../../Firebase'
+import profile from './../../../assets/auth/profile.jpg'
 
 function Profile(props) {
     const [modal, dispatch] = useReducer(reducer, {

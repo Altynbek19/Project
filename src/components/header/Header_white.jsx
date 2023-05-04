@@ -33,11 +33,11 @@ const Header_white = (Props) => {
             </div>
                 <div className='product_container'>
                     <ul className='product'>
-                        <Link to="/Clothes">Одежда</Link>
-                        <Link to="*">Фитнес</Link>
-                        <Link to="*">Акксессуары</Link>
-                        <Link to="*">Скидки</Link>
-                        <Link to="*">Горнолыжная одежда</Link>
+                        <Link to="/category">Все товары</Link>
+                        <Link to="/category/eg8WVQibxIjnKFgIqnR7">Фитнес</Link>
+                        <Link to="/category/5z04t9tPCTtpyeamADqC">Акксессуары</Link>
+                        <Link to="/category/GkU75LBVU7XJ54b7cuMi">Скидки</Link>
+                        <Link to="/category/q7qOlgxEVLovEpJyEogo">Горнолыжная одежда</Link>
                     </ul>
                 </div>
 

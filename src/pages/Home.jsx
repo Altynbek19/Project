@@ -35,7 +35,7 @@ function Main(props) {
 
             <div>
                 <h1>Спортивный магазин <br /> вашей мечты</h1>
-                <div className='to_catalog'><Link to='/Clothes'>Каталог</Link></div>
+                <div className='to_catalog'><Link to='/Category'>Каталог</Link></div>
             </div>
             <div className='img_home'>
                 <img src={home} alt="" />

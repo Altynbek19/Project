@@ -6,3 +6,33 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
+@media screen and (max-width: 700px) {
+    .return_container{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .text_return{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .return_container{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .text_return{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .return_container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .text_return{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

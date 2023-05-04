@@ -43,9 +43,9 @@ const Footer = (Props) => {
                 <div className='contact'>
                     <div className='img_content'>
                         <div className='img_contact'>
-                            <img src={twitter} alt="" className='image_cont'/>
-                            <img src={facebook} alt="" className='image_cont'/>
-                            <img src={instagram} alt="" className='image_cont'/>
+                            <a href='https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'><img src={twitter} alt="" className='image_cont'/></a>
+                            <a href='https://www.facebook.com/elonreevesmusk/?locale=ru_RU'><img src={facebook} alt="" className='image_cont'/></a>
+                            <a href='https://www.instagram.com/elonmusk/?hl=ru'><img src={instagram} alt="" className='image_cont'/></a>
                         </div>
                         <div className='content'>
                             <p>Only Sport 2023</p>

@@ -1,5 +1,6 @@
 import { useState } from 'react'; 
 import './BurgerMenu.css'; 
+import { Link } from 'react-router-dom';
  
 function BurgerMenu() { 
   const [isOpen, setIsOpen] = useState(false); 
@@ -16,21 +17,21 @@ function BurgerMenu() {
       <div className={`burger-menu-content ${isOpen ? 'open' : ''}`}> 
         <div className="btnclose" onClick={handleToggle}>X</div> 
         <ul className="burger-menu-list"> 
-          <li className="burger-menu-item"><a href="/catalog" className="burger-menu-link">Каталог</a></li> 
+          <li className="burger-menu-item"><a href="/profile" className="burger-menu-link">Профиль</a></li> 
+          <li className="burger-menu-item"><a href="/category" className="burger-menu-link">Каталог</a></li> 
           <li className="burger-menu-item has-subheader"> 
             <div className="burger-menu-link"> 
-              Доставки 
+              <a href='/basket'>Корзина </a>
               <div className="burger-menu-subheader-icon"></div> 
             </div> 
             <div className="burger-menu-subheader"> 
               <ul className="burger-menu-subheader-list"> 
-                <li className="burger-menu-subheader-item"><a href="" className="burger-menu-subheader-link">Каталог</a></li> 
-                <li className="burger-menu-subheader-item"><a href="#" className="burger-menu-subheader-link">Доставка</a></li> 
+                <li className="burger-menu-subheader-item"><a href="/category" className="burger-menu-subheader-link">Каталог</a></li>
+                <li className="burger-menu-subheader-item"><a href="/basket" className="burger-menu-subheader-link">Корзина</a></li>
               </ul> 
             </div> 
           </li> 
-          <li className="burger-menu-item"><a href="#" className="burger-menu-link">Акции</a></li> 
-          <li className="burger-menu-item"><a href="#" className="burger-menu-link">Под заказ</a></li> 
+          <li className="burger-menu-item"><a href="/favorites" className="burger-menu-link">Избранные</a></li> 
         </ul> 
       </div> 
     </div> 

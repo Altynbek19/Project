@@ -34,16 +34,16 @@ function Category(props) {
     return (
         <div>
             <div className="product_container">
-                        <Link to='/product/:1'>
                             <div className='product_card'>
-                                <img src={product.photo} alt="" />
-                                <div className='product_name_price'>
-                                    <div className='product_name'>{product.name}</div>
-                                    <div className='price'>{product.price} KGS</div>
-                                </div>
-                                <div><button>Добавить в корзину</button></div>
+                                <Link to='/product/:1'>
+                                    <img src={product.photo} alt="" />
+                                    <div className='product_name_price'>
+                                        <div className='product_name'>{product.name}</div>
+                                        <div className='price'>{product.price} KGS</div>
+                                    </div>
+                                </Link>
+                                {/* <div><button>Добавить в корзину</button></div> */}
                             </div>
-                        </Link>
             </div>
         </div>  
     )
@@ -69,7 +69,7 @@ function Category(props) {
             <div className="category_container">
                         <div className='road'>
                             <div><Link to='/'>Главная</Link></div>
-                            <div><Link to='/Clothes'>Одежда</Link></div>
+                            <div><Link to='/category'>Одежда</Link></div>
                         </div>
                 <CardGroup>
                     {viewProducts}

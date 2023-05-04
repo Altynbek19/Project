@@ -14,3 +14,45 @@
     margin-bottom: 140px;
     margin-top: 80px;
 }
+@media screen and (max-width: 850px) {
+    .guarantee_container{
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+    .text_guarantee{
+        margin-bottom: 100px;
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .guarantee_container{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .text_guarantee{
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .guarantee_container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .text_guarantee{
+        margin-bottom: 40px;
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 322px) {
+    .guarantee_container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .text_guarantee{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+

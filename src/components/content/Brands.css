@@ -1,57 +1,287 @@
-.brands_container{
+.brands_container {
     padding-left: 175px;
     padding-right: 175px;
     padding-bottom: 70px;
     background: linear-gradient(270deg, #FFFFFF 0%, #FEFFFD 36.98%, #B4FF78 80.73%, #9AFF4A 100%);
 
 }
-.brands_container .road{
+
+.brands_container .road {
     margin-top: 0px;
     padding-top: 45px;
 }
-.title_brands{
+
+.title_brands {
     margin-top: 0px;
     padding-top: 80px;
     font-size: 50px;
 }
-.text_brands{
+
+.text_brands {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
     gap: 130px;
 }
-.nike_container, .adidas_container, .puma_container, .reebok_container{
+
+.nike_container,
+.adidas_container,
+.puma_container,
+.reebok_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nike_img{
+
+.nike_img {
     width: 500px;
     height: 500px;
     background: url(./../../assets/content/nike.png);
     background-size: cover;
 }
-.adidas_img{
+
+.adidas_img {
     width: 500px;
     height: 500px;
     background: url(./../../assets/content/adidas.png);
     background-size: cover;
 }
-.puma_img{
+
+.puma_img {
     width: 500px;
     height: 500px;
     background: url(./../../assets/content/puma.png);
     background-size: cover;
 }
-.reebok_img{
+
+.reebok_img {
     width: 500px;
     height: 500px;
     background: url(./../../assets/content/reebok.png);
     background-size: cover;
 }
-.nike, .adidas, .puma, .reebok{
+
+.nike,
+.adidas,
+.puma,
+.reebok {
+    font-size: 30px;
+}
+
+.text_brands strong {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+    .brands_container {
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 50px;
+        background: linear-gradient(270deg, #FFFFFF 0%, #FEFFFD 36.98%, #B4FF78 80.73%, #9AFF4A 100%);
+
+    }
+
+    .nike_img {
+        width: 400px;
+        height: 400px;
+        background: url(./../../assets/content/nike.png);
+        background-size: cover;
+    }
+
+    .adidas_img {
+        width: 400px;
+        height: 400px;
+        background: url(./../../assets/content/adidas.png);
+        background-size: cover;
+    }
+
+    .puma_img {
+        width: 400px;
+        height: 400px;
+        background: url(./../../assets/content/puma.png);
+        background-size: cover;
+    }
+
+    .reebok_img {
+        width: 400px;
+        height: 400px;
+        background: url(./../../assets/content/reebok.png);
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .brands_container {
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 50px;
+        background: linear-gradient(270deg, #FFFFFF 0%, #FEFFFD 36.98%, #B4FF78 80.73%, #9AFF4A 100%);
+
+    }
+
+    .nike_img {
+        width: 300px;
+        height: 300px;
+        background: url(./../../assets/content/nike.png);
+        background-size: cover;
+    }
+
+    .adidas_img {
+        width: 300px;
+        height: 300px;
+        background: url(./../../assets/content/adidas.png);
+        background-size: cover;
+    }
+
+    .puma_img {
+        width: 300px;
+        height: 300px;
+        background: url(./../../assets/content/puma.png);
+        background-size: cover;
+    }
+
+    .reebok_img {
+        width: 300px;
+        height: 300px;
+        background: url(./../../assets/content/reebok.png);
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 700px) {
+    .brands_container {
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 30px;
+        background: linear-gradient(270deg, #FFFFFF 0%, #FEFFFD 36.98%, #B4FF78 80.73%, #9AFF4A 100%);
+
+    }
+
+    .nike_img {
+        width: 200px;
+        height: 200px;
+        background: url(./../../assets/content/nike.png);
+        background-size: cover;
+    }
+
+    .adidas_img {
+        width: 200px;
+        height: 200px;
+        background: url(./../../assets/content/adidas.png);
+        background-size: cover;
+    }
+
+    .puma_img {
+        width: 200px;
+        height: 200px;
+        background: url(./../../assets/content/puma.png);
+        background-size: cover;
+    }
+
+    .reebok_img {
+        width: 200px;
+        height: 200px;
+        background: url(./../../assets/content/reebok.png);
+        background-size: cover;
+    }
+.nike,
+.adidas,
+.puma,
+.reebok {
+    font-size: 18px;
+}
+.text_brands strong {
     font-size: 20px;
 }
-.text_brands strong{
-    font-size: 25px;
+}
+@media screen and (max-width: 500px) {
+    .brands_container {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 15px;
+        background: linear-gradient(270deg, #FFFFFF 0%, #FEFFFD 36.98%, #B4FF78 80.73%, #9AFF4A 100%);
+
+    }
+
+    .nike_img {
+        width: 150px;
+        height: 150px;
+        background: url(./../../assets/content/nike.png);
+        background-size: cover;
+    }
+
+    .adidas_img {
+        width: 150px;
+        height: 150px;
+        background: url(./../../assets/content/adidas.png);
+        background-size: cover;
+    }
+
+    .puma_img {
+        width: 150px;
+        height: 150px;
+        background: url(./../../assets/content/puma.png);
+        background-size: cover;
+    }
+
+    .reebok_img {
+        width: 150px;
+        height: 150px;
+        background: url(./../../assets/content/reebok.png);
+        background-size: cover;
+    }
+.nike,
+.adidas,
+.puma,
+.reebok {
+    font-size: 15px;
+}
+.text_brands strong {
+    font-size: 17px;
+}
+}
+@media screen and (max-width: 350px) {
+    .brands_container {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        background: linear-gradient(270deg, #FFFFFF 0%, #FEFFFD 36.98%, #B4FF78 80.73%, #9AFF4A 100%);
+
+    }
+
+    .nike_img {
+        width: 80px;
+        height: 80px;
+        background: url(./../../assets/content/nike.png);
+        background-size: cover;
+    }
+
+    .adidas_img {
+        width: 80px;
+        height: 80px;
+        background: url(./../../assets/content/adidas.png);
+        background-size: cover;
+    }
+
+    .puma_img {
+        width: 80px;
+        height: 80px;
+        background: url(./../../assets/content/puma.png);
+        background-size: cover;
+    }
+
+    .reebok_img {
+        width: 80px;
+        height: 80px;
+        background: url(./../../assets/content/reebok.png);
+        background-size: cover;
+    }
+.nike,
+.adidas,
+.puma,
+.reebok {
+    font-size: 10px;
+}
+.text_brands strong {
+    font-size: 15px;
+}
 }

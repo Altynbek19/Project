@@ -107,5 +107,6 @@ img{
 }
 
 a{
-    color: black;
+    cursor: pointer;
+    color: white;
 }

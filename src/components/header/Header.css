@@ -71,15 +71,15 @@
 }
 
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1280px) {
     .header_black .search_logo input{  
-        border: black 1px solid;
+        border: white 1px solid;
         display: flex;
-        background-color: white;
+        background-color: black;
         color: black;
-        background-image: url(/src/assets/header/search.png);
+        background-image: url(/src/assets/header/search_white.png);
         background-repeat: no-repeat; /*Убираем повтор изображения*/   
-        background-position: 400px; /*Позиционируем*/
+        background-position: 10px; /*Позиционируем*/
         background-size: 15px;
         outline: none; /*убираем стандартную обводку браузера*/  
         border-radius: 20px; /*закругляем углы для остальных браузеров*/   
@@ -97,11 +97,10 @@
     }
 
 }
-
 @media screen and (max-width: 950px){
     .header_black .search_logo input{
         width: 340px;
-        background-position: 340px;
+        background-position: 10px;
     }
     .product_black a{
         font-size: 12px;
@@ -110,7 +109,7 @@
 @media screen and (max-width: 821px){
     .header_black .search_logo input{
         width: 340px;
-        background-position: 340px;
+        background-position: 10px;
     }
     .product_black a{
         font-size: 10px;
@@ -132,7 +131,7 @@
         display: flex;
         flex-grow: 1;
         width: 340px;
-        background-position: 340px;
+        background-position: 10px;
         margin-left: 80px;
     }
     .menu{
@@ -157,11 +156,10 @@
 }
 @media screen and (max-width: 700px) {
     .header_black .search_logo input {
-        background-color: white;
         color: black;
-        background-image: url(/src/assets/header/search.png);
+        background-image: url(/src/assets/header/search_white.png);
         background-repeat: no-repeat; /*Убираем повтор изображения*/   
-        background-position: 300px; /*Позиционируем*/
+        background-position: 10px; /*Позиционируем*/
         background-size: 15px;
         outline: none; /*убираем стандартную обводку браузера*/  
         border-radius: 20px; /*закругляем углы для остальных браузеров*/  
@@ -190,7 +188,7 @@
         display: flex;
         flex-grow: 1;
         width: 240px;
-        background-position: 240px;
+        background-position: 10px;
     }
     .header_black .search_logo{
         margin-left: -70px;
@@ -215,28 +213,37 @@
         display: none;
     }
 }
-@media screen and (max-width:520px){
+@media screen and (max-width:595px){
     .header_black .search_logo input{
         width: 200px;
-        background-position: 200px;
+        background-position: 10px;
     }
 }
 @media screen and (max-width: 470px){
-    .header_black .search_logo input{
+    .logo img{
         width: 100px;
-        background-position: 100px;
     }
-
     .header_black .header_logo{
         padding-left: 20px;
     }
 }
 
+@media screen and (max-width: 400px) {
+    .header_black .search_logo input{
+        width: 150px;
+        background-position: 10px;
+    }
+}
 
 @media screen and (max-width: 360px){
+    
+    .header_black .search_logo input{
+        width: 100px;
+        background-position: 10px;
+    }
     .header_black .search_logo input{
         width: 80px;
-        background-position: 80px;
+        background-position: 10px;
     }
     
 }

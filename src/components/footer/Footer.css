@@ -10,7 +10,9 @@ footer{
     box-sizing: border-box;
 }
 
-
+footer a{
+    color: white;
+}
 .more_inf{
     display: flex;
     justify-content: space-between;
@@ -61,6 +63,9 @@ a:hover{
     justify-content: space-between;
     align-items: end;
     width: 100%;
+}
+.img_contact a:hover{
+    border: none;
 }
 .img_contact{
     display: flex;
