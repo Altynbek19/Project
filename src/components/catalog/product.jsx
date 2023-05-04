@@ -22,7 +22,7 @@ function Product(props) {
         <div className='product_page'>
             <div className='road'>
                 <div><Link to='/'>Главная</Link></div>
-                <div><Link to='/Clothes'>Одежда</Link></div>
+                <div><Link to='/category'>Одежда</Link></div>
             </div>
             <div className='product_box'>
                 <div className='product_full_img'>
