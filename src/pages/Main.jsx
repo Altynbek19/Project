@@ -2,7 +2,7 @@ import Button from "../components/ui/Button";
 import { useReducer } from 'react'
 import Modal from "../components/Modal";
 import { useAuthState } from "react-firebase-hooks/auth"
-import { auth } from '../firebase'
+import { auth } from '../Firebase'
 
 const Main = (props) => {
     const [modal, dispatch] = useReducer(reducer, {

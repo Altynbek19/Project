@@ -69,13 +69,13 @@ input{
     padding-left: 10px;
     color: black;
 }
-.Sign_in{
+/* .Sign_in{
     background-color: black;
     min-width: 360px;
     min-height: 30px;
     border-radius: 3px;
     margin-bottom: 10px;
-}
+} */
 
 .Sign_in input{
     border: none;
@@ -99,7 +99,7 @@ input{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .forget{
