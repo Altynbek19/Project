@@ -9,11 +9,6 @@ import Clothes from '../components/catalog/Clothes'
 import Category from "../components/catalog/Category.jsx";
 import Basket from "../components/catalog/Basket.jsx";
 import Favorites from "../components/catalog/Favorites.jsx";
-import Authorization from "../components/auth/Authorization.jsx";
-import Authorization_icon from "../components/auth/Authorization_icon.jsx";
-import Registration from "../components/auth/Registration";
-import Registration_icon from "../components/auth/Registration_icon";
-import Profile from '../components/auth/Profile/Profile';
 import Home from '../pages/Home'
 import About_us from "../components/content/About_us.jsx";
 import Return from "../components/content/Return.jsx";
