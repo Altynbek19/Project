@@ -20,7 +20,6 @@ import Return from "../components/content/Return.jsx";
 import Guarantee from "../components/content/Guarantee.jsx";
 import Brands from "../components/content/Brands.jsx";
 const path = (import.meta.env.PROD)? '/project' : ''
-import BurgerMenu from '../components/header/BurgerMenu.jsx'
   
 const router = createBrowserRouter([
   {
@@ -30,7 +29,6 @@ const router = createBrowserRouter([
         <Header />
         <Home />
         <Footer />
-        <BurgerMenu/>
       </div>
     )
   },
@@ -41,7 +39,6 @@ const router = createBrowserRouter([
         <Header />
         <Clothes />
         <Footer />
-        <BurgerMenu/>
       </div>
     )
   },
@@ -52,7 +49,6 @@ const router = createBrowserRouter([
         <Header />
         <Product />
         <Footer />
-        <BurgerMenu/>
       </div>
     )
   },
@@ -62,7 +58,6 @@ const router = createBrowserRouter([
       <div>
         <Header />
         <Footer />
-        <BurgerMenu/>
       </div>
     )
   },
@@ -73,7 +68,6 @@ const router = createBrowserRouter([
         <Header />
         <Basket />
         <Footer />
-        <BurgerMenu/>
       </div>
     )
   },
@@ -84,7 +78,6 @@ const router = createBrowserRouter([
         <Header />
         <Favorites />
         <Footer />
-        <BurgerMenu/>
       </div>
     )
   },
@@ -103,27 +96,6 @@ const router = createBrowserRouter([
         <Header />
         <Category />
         <Footer />
-        <BurgerMenu/>
-      </div>
-    )
-  },
-  {
-    path: `${path}/sign_in_icon`,
-    element: (
-      <div>
-        <Header />
-        <Authorization_icon />
-        <BurgerMenu/>
-      </div>
-    )
-  },
-  {
-    path: `${path}/register_icon`,
-    element: (
-      <div>
-        <Header />
-        <Registration_icon />
-        <BurgerMenu/>
       </div>
     )
   },
@@ -135,7 +107,6 @@ const router = createBrowserRouter([
         <Main />
         {/* <Authorization_icon/> */}
         <Footer/>
-        <BurgerMenu/>
       </div>
     )
   },
@@ -146,7 +117,6 @@ const router = createBrowserRouter([
         <Header />
         <About_us />
         <Footer/>
-        <BurgerMenu/>
       </div>
     )
   },
@@ -157,7 +127,6 @@ const router = createBrowserRouter([
         <Header />
         <Return />
         <Footer/>
-        <BurgerMenu/>
       </div>
     )
   },
@@ -168,7 +137,6 @@ const router = createBrowserRouter([
         <Header />
         <Guarantee />
         <Footer/>
-        <BurgerMenu/>
       </div>
     )
   },
@@ -179,7 +147,6 @@ const router = createBrowserRouter([
         <Header />
         <Brands />
         <Footer/>
-        <BurgerMenu/>
       </div>
     )
   },
@@ -190,7 +157,6 @@ const router = createBrowserRouter([
         <Header />
         <Category />
         <Footer/>
-        <BurgerMenu/>
     </div>
     )
   }

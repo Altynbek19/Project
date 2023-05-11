@@ -11,6 +11,7 @@ import React from 'react';
 import { useReducer } from 'react'
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from '../../Firebase'
+import BurgerMenu from '../header/BurgerMenu'
 
 
 function Header(props) {
@@ -76,6 +77,7 @@ function Header(props) {
                                 <Link to="/category/q7qOlgxEVLovEpJyEogo">Горнолыжная одежда</Link>
                             </ul>
                         </div>
+                        <BurgerMenu/>
                 </header>
             );
             }else 
@@ -103,6 +105,7 @@ function Header(props) {
                                 <Link to="/category/q7qOlgxEVLovEpJyEogo">Горнолыжная одежда</Link>
                             </ul>
                         </div>
+                        <BurgerMenu/>
                 </header>
             );
     } else 
@@ -130,6 +133,7 @@ function Header(props) {
                                 <Link to="/category/q7qOlgxEVLovEpJyEogo">Горнолыжная одежда</Link>
                             </ul>
                         </div>
+                        <BurgerMenu/>
                 </header>
     );
 }
