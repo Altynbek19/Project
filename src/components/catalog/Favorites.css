@@ -21,3 +21,23 @@
     flex-direction: column;
     gap: 80px;
 }
+@media screen and (max-width: 1250px) {
+    .favorites_container{
+        background-size: 500px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .favorites_container{
+        background-size: 400px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .favorites_container{
+        background-size: 300px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .favorites_container{
+        background-size: 200px;
+    }
+}

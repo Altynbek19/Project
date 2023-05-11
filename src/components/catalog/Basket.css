@@ -21,3 +21,23 @@
     flex-direction: column;
     gap: 80px;
 }
+@media screen and (max-width: 1250px) {
+    .basket_container{
+        background-size: 500px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .basket_container{
+        background-size: 400px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .basket_container{
+        background-size: 300px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .basket_container{
+        background-size: 200px;
+    }
+}
