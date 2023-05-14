@@ -66,7 +66,7 @@ function Header(props) {
                             <Link to='/basket'><img className='basket' src={basket} alt="" /></Link>
                             <Link to='/favorites'><img className='save' src={save} alt="" /></Link>
                             {/* <Link to='/profile'><img className='user_profile' src={profile} alt="" /></Link> */}
-                            <img className='user_profile' onClick={() => openModal('authorization')} src={profile} alt="" />
+                            <Link to='/profile'><img className='user_profile' onClick={() => openModal('authorization')} src={profile} alt="" /></Link>
                         </div>
                     </div>
                         <div className='product_container'>
