@@ -11,7 +11,7 @@ import React from 'react';
 import { useReducer } from 'react'
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from '../../Firebase'
-import BurgerMenu from '../header/BurgerMenu'
+import BurgerMenu from '../../components/header/BurgerMenu'
 
 
 function Header(props) {
@@ -65,7 +65,8 @@ function Header(props) {
                         <div className='profile'>
                             <Link to='/basket'><img className='basket' src={basket} alt="" /></Link>
                             <Link to='/favorites'><img className='save' src={save} alt="" /></Link>
-                            <Link to='/profile'><img className='user_profile' src={profile} alt="" /></Link>
+                            {/* <Link to='/profile'><img className='user_profile' src={profile} alt="" /></Link> */}
+                            <img className='user_profile' onClick={() => openModal('authorization')} src={profile} alt="" />
                         </div>
                     </div>
                         <div className='product_container'>
@@ -77,7 +78,7 @@ function Header(props) {
                                 <Link to="/category/q7qOlgxEVLovEpJyEogo">Горнолыжная одежда</Link>
                             </ul>
                         </div>
-                        <BurgerMenu/>
+                        <BurgerMenu />
                 </header>
             );
             }else 
@@ -105,7 +106,7 @@ function Header(props) {
                                 <Link to="/category/q7qOlgxEVLovEpJyEogo">Горнолыжная одежда</Link>
                             </ul>
                         </div>
-                        <BurgerMenu/>
+                        <BurgerMenu />
                 </header>
             );
     } else 
@@ -133,7 +134,7 @@ function Header(props) {
                                 <Link to="/category/q7qOlgxEVLovEpJyEogo">Горнолыжная одежда</Link>
                             </ul>
                         </div>
-                        <BurgerMenu/>
+                        <BurgerMenu />
                 </header>
     );
 }

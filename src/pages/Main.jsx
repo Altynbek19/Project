@@ -1,6 +1,7 @@
 import Button from "../components/ui/Button";
 import { useReducer } from 'react'
 import Modal from "../components/Modal";
+import Authorization_icon from "../components/auth/Authorization_icon";
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from '../Firebase'
 
@@ -75,10 +76,10 @@ const Main = (props) => {
         
         return (
             <div className="container_center-flex">
-                <div onClick={() => openModal('authorization')}>
+                {/* <div onClick={() => openModal('authorization')}>
                     <Button text='Авторизация' />
-                </div>
-                <div onClick={() => openModal('registration')}>
+                </div> */}
+                {/* <div onClick={() => openModal('registration')}>
                     <Button text='Регистрация' />
                 </div>
                 <div onClick={() => openModal('password_recovery_email')}>
@@ -87,7 +88,8 @@ const Main = (props) => {
                 <div onClick={() => openModal('password_recovery_pass')}>
                     <Button text='Восстановление пароля(пароль)' />
                 </div>
-                
+                 */}
+                 <Authorization_icon />
                 <Modal modal={modalState}/>
             </div>
     );

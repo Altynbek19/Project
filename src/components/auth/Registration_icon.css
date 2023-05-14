@@ -1,25 +1,8 @@
-.container_reg_image{
-    display: flex;
-}
-.choose_log_in_register a{
-    color: rgba(23, 34, 31, 1);
-}
-.container_1{
-    width: 50%;
-    height: 100%;
-}
-.container_2{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-}
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: rgba(153, 194, 255, 0.24); */
+    align-items: flex-start;
+    background-color: rgba(153, 194, 255, 0.24);
     border-radius: 8px;
     padding-left: 20px;
     padding-bottom: 40px;
@@ -27,27 +10,28 @@
     box-sizing: border-box;
     padding-right: 20px;
 }
-.choose_register_2{
-    border-bottom: 2px solid rgba(154, 255, 74, 1);
-    cursor: pointer;
-}
-.choose_register{
-    cursor: pointer;
-}
-
-.Sign_in_input{
-    color: white;
-    cursor: pointer;
-}
-.remember_inp{
-    width: 20px;
-    height: 20px;
-    padding: 0px;
-    cursor: pointer;
-}
-.choose_log_in_register{
+.cc{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+.reg_box{
+    padding: 250px;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.img_box img{
+    width: 900px;
+}
+.cc h2{
+    color: black;
+}
+.auth_reg{
+    display: flex;
+    gap: 26px;
+}
+.h2_reg{
+    border-bottom: 2px solid rgba(154, 255, 74, 1);
 }
 .exit{
     display: flex;
@@ -55,66 +39,68 @@
     width: 100%;
     position: inherit;
 }
+.remember_text{
+    margin: 0px;
+}
 
-
-h4{
-    margin: 5px;
+.Sign_in{
+    color: white;
 }
 input{
     background: none;
     width: 360px;
-    height: 30px;
-    border: 1px solid rgba(23, 34, 31, 1);
+    height: 38px;
+    border: 1px solid black;
     border-radius: 3px;
     padding-left: 10px;
-    color: black;
 }
-/* .Sign_in{
+.cc .Sign_in input{
     background-color: black;
-    min-width: 360px;
-    min-height: 30px;
+    width: 360px;
+    min-height: 38px;
     border-radius: 3px;
     margin-bottom: 10px;
-} */
-
-.Sign_in input{
-    border: none;
-
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    cursor: pointer;
 }
 
-.Sign_in:hover{
-    background-color: rgba(0, 0, 0, 0.604);
-}
-.e-mail, .password, .name, .phone, .new_password{
+.e-mail, .password{
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-bottom: 15px;
-}
-.a_have_not{ 
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 0px;
 }
 a{
     text-decoration: none;
-    color: black;
 }
 
-.forget{
+.reg_box .forget{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 360px;
-    border-bottom: 1px solid white ;
-    height: 80px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
+}
+.forget a{
+    color: black;
 }
 
 .remember{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.remember input{
+    padding: 0px;
+    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+    background-color: black;
 }
 
 .mark{
@@ -122,12 +108,12 @@ a{
     height: 18px;
 }
 
-.contact{
+.contact_auth{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
     width: 360px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .social_net{
@@ -142,7 +128,7 @@ a{
 }
 .reg{
     background: none;
-    border: 2px solid rgba(23, 34, 31, 1);
+    border: 1px solid white;
     box-sizing: border-box;
     width: 360px;
     height: 38px;
@@ -151,31 +137,4 @@ a{
 
 .reg:hover{
     background-color: rgba(255, 255, 255, 0.259);
-}
-
-.contact_social_net{
-    width: 360px;
-    padding-top: 50px;
-    border-top: 1px solid rgba(23, 34, 31, 1);
-}
-.contact_auth{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 360px;
-    margin-bottom: 50px;
-}
-
-.social_net{
-    display: flex;
-    justify-content: space-evenly;
-}
-.reg_image{
-    background: url(/src/assets/auth/reg_image.png) no-repeat;
-    background-size: cover;
-    width: 600px;
-}
-.container_reg_image a{
-    color: rgba(23, 34, 31, 1);
 }

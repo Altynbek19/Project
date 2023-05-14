@@ -1,37 +1,38 @@
-.container_reg_image{
-    display: flex;
-}
-.choose_log_in_register_icon a{
-    color: rgba(23, 34, 31, 1);
-}
-.container_1{
-    width: 50%;
-    height: 100%;
-}
-.container_2{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-}
-.container_icon{
+.container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-color: rgba(153, 194, 255, 0.24);
     border-radius: 8px;
     padding-left: 20px;
     padding-bottom: 40px;
     padding-top: 6px;
     box-sizing: border-box;
     padding-right: 20px;
-    background-color: red;
 }
-.choose_log_in{
+.cc{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.auth_box{
+    padding: 250px;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.img_box img{
+    width: 700px;
+}
+.cc h2{
+    color: black;
+}
+.auth_reg{
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+.h2_auth{
     border-bottom: 2px solid rgba(154, 255, 74, 1);
-    cursor: pointer;
-}
-.choose_register{
-    cursor: pointer;
 }
 .exit{
     display: flex;
@@ -42,36 +43,29 @@
 .remember_text{
     margin: 0px;
 }
-.choose_log_in_register{
-    display: flex;
-    gap: 20px;
-}
+
 .Sign_in{
     color: white;
 }
 input{
     background: none;
     width: 360px;
-    height: 30px;
-    border: 1px solid rgba(23, 34, 31, 1);
+    height: 38px;
+    border: 1px solid black;
     border-radius: 3px;
     padding-left: 10px;
 }
-/* .Sign_in{
+.cc .Sign_in input{
     background-color: black;
-    min-width: 360px;
-    min-height: 30px;
-    border-radius: 5px;
+    width: 360px;
+    min-height: 38px;
+    border-radius: 3px;
     margin-bottom: 10px;
-} */
-.sign_in_input{
-    border-radius: 5px;
     color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
-.Sign_in:hover{
-    background-color: rgba(0, 0, 0, 0.604);
-}
 .e-mail, .password{
     display: flex;
     flex-direction: column;
@@ -84,35 +78,42 @@ a{
     text-decoration: none;
 }
 
-.forget{
+.auth_box .forget{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 360px;
-    border-bottom: 1px solid white ;
-    height: 100px;
-    padding-bottom: 15px;
+    border-bottom: 1px solid black ;
+    padding-bottom: 50px;
+}
+.forget a{
+    color: black;
 }
 
 .remember{
     display: flex;
+    justify-content: center;
     align-items: center;
-    column-gap: 2px;
+    gap: 3px;
+}
+.remember input{
+    padding: 0px;
+    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+    background-color: black;
 }
 
-
-.contact_social_net{
-    width: 360px;
-    margin-top: 50px;
-    padding-top: 50px;
-    border-top: 1px solid rgba(23, 34, 31, 1);
+.mark{
+    width: 18px;
+    height: 18px;
 }
+
 .contact_auth{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
     width: 360px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -120,8 +121,21 @@ a{
     display: flex;
     justify-content: space-evenly;
 }
-.reg_image{
-    background: url(/src/assets/auth/reg_image.png) no-repeat;
-    background-size: cover;
-    width: 600px;
+
+.register{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+.reg{
+    background: none;
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 360px;
+    height: 38px;
+    border-radius: 3px;
+}
+
+.reg:hover{
+    background-color: rgba(255, 255, 255, 0.259);
 }

@@ -9,16 +9,22 @@ import Clothes from '../components/catalog/Clothes'
 import Category from "../components/catalog/Category.jsx";
 import Basket from "../components/catalog/Basket.jsx";
 import Favorites from "../components/catalog/Favorites.jsx";
+import Authorization from "../components/auth/Authorization.jsx";
+import Authorization_icon from "../components/auth/Authorization_icon.jsx";
+import Registration from "../components/auth/Registration";
+import Registration_icon from "../components/auth/Registration_icon";
+import Profile from '../components/auth/Profile/Profile';
 import Home from '../pages/Home'
 import About_us from "../components/content/About_us.jsx";
 import Return from "../components/content/Return.jsx";
 import Guarantee from "../components/content/Guarantee.jsx";
 import Brands from "../components/content/Brands.jsx";
 const path = (import.meta.env.PROD)? '/project' : ''
+import BurgerMenu from '../components/header/BurgerMenu.jsx'
   
 const router = createBrowserRouter([
   {
-    path: `${path}/`,
+    path: `/`,
     element: (
       <div>
         <Header />
@@ -28,7 +34,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/category`,
+    path: `/category`,
     element: (
       <div>
         <Header />
@@ -38,7 +44,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/product/:id`,
+    path: `/product/:id`,
     element: (
       <div>
         <Header />
@@ -48,7 +54,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/category`,
+    path: `/category`,
     element: (
       <div>
         <Header />
@@ -57,7 +63,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/basket`,
+    path: `/basket`,
     element: (
       <div>
         <Header />
@@ -67,7 +73,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/favorites`,
+    path: `/favorites`,
     element: (
       <div>
         <Header />
@@ -77,7 +83,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}*`,
+    path: `*`,
     element: (
       <div>
         <NotFound />
@@ -85,7 +91,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/man_catalog`,
+    path: `/man_catalog`,
     element: (
       <div>
         <Header />
@@ -95,18 +101,26 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/profile`,
+    path: `/register_icon`,
+    element: (
+      <div>
+        <Header />
+        <Registration_icon />
+      </div>
+    )
+  },
+  {
+    path: `/profile`,
     element: (
       <div>
         <Header />
         <Main />
         {/* <Authorization_icon/> */}
-        <Footer/>
       </div>
     )
   },
   {
-    path: `${path}/about_us`,
+    path: `/about_us`,
     element: (
       <div>
         <Header />
@@ -116,7 +130,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/return`,
+    path: `/return`,
     element: (
       <div>
         <Header />
@@ -126,7 +140,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/guarantee`,
+    path: `/guarantee`,
     element: (
       <div>
         <Header />
@@ -136,7 +150,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: `${path}/brands`,
+    path: `/brands`,
     element: (
       <div>
         <Header />

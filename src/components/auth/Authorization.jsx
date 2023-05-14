@@ -1,5 +1,5 @@
 import {useForm} from "react-hook-form";
-import './Authorization.css'
+// import './Authorization.css'
 import mark from '/src/assets/mark.png'
 import google from '/src/assets/auth/google.png'
 import instagram from '/src/assets/auth/instagram.png'

@@ -1,16 +1,14 @@
 import {useForm} from "react-hook-form";
-import './Registration.css'
-import exit from '/src/assets/auth/exit.png'
-import mark from '/src/assets/mark.png'
-import google from '/src/assets/auth/google.png'
-import instagram from '/src/assets/auth/instagram.png'
-import facebook from '/src/assets/auth/facebook.png'
+import './Registration_icon.css'
 import reg_image from '/src/assets/auth/reg_image.png'
 import { auth } from "../../Firebase";
 import { createUserWithEmailAndPassword ,sendEmailVerification   } from 'firebase/auth';
 import {signInWithGoogle} from '../../Firebase'
 import { doc, setDoc } from "firebase/firestore";
 import { Link } from "react-router-dom";
+import { useReducer } from 'react'
+import { useAuthState } from "react-firebase-hooks/auth"
+import Button from "../../components/ui/Button"
 
 
 const Registration = (props) => {
@@ -27,17 +25,73 @@ const Registration = (props) => {
 
     console.log(errors)
 // 
+const [modal, dispatch] = useReducer(reducer, {
+    active: false,
+    content: 'registration'
+});  
+const [user, loading, error] = useAuthState(auth);
 
+function reducer(state, action) {
+    switch (action.type) {
+        case 'modal':
+            return {
+                ...state,
+                active: action.modal
+            };
+        case 'content':
+            return {
+                ...state,
+                content: action.content
+            };
+        default:
+            return state
+    }
+}
 
-    return (
-        <div className="container_reg_image">
-            <div className="container_1">
-                <div className='container'>
-                    <div className="choose_log_in_register">
-                        <Link to='/sign_in_icon'><h3 className='choose_log_in_2'>Войти</h3></Link>   
-                        <Link to='/register_icon'><h3 className='choose_register_2'>Регистрация</h3></Link> 
-                    </div>  
-                    <form className="modal-form" onSubmit={handleSubmit(onSubmit)}>         
+const modalState = {
+    props: modal,
+    dispatch: dispatch,
+}
+
+async function openModal(content) {
+    await dispatch({type: 'content', content: content})
+    await dispatch({type: 'modal', modal: true})
+}
+const signOut = () => {
+    auth.signOut();
+};
+
+if (user) {
+    if (user.emailVerified){
+        return (
+            <div className="container center-flex">
+                <h1>Ваши данные</h1>
+                <div>Ваша почта: {user.email}</div>
+                <div onClick={signOut}>
+                    <Button text='Выйти с аккаунта' />
+                </div>
+            </div>
+        );
+        }else 
+        return (
+            <div className="container center-flex">
+                <h1>Профиль</h1>
+                <div>Чтобы войти вам нужно подтвердить почту</div>
+                <div>Ваша почта: {user.email}</div>
+                <div onClick={signOut}>
+                    <Button text='Выйти с аккаунта' />
+                </div>
+            </div>
+        );
+} else 
+return (
+    <div className='cc'>
+        <div className="reg_box">
+                <div className="auth_reg">
+                    <Link to='/profile'><h2 >Войти</h2></Link> 
+                    <Link to='/register_icon'><h2 className="h2_reg">Регистрация</h2></Link>  
+                </div>
+            <form className="modal-form" onSubmit={handleSubmit(onSubmit)}>         
             <div className='name'>
                 <h4 htmlFor="fullname">ФИО</h4>
                 <input 
@@ -71,19 +125,6 @@ const Registration = (props) => {
                 />
                 {errors.email && <span className="error" role="alert">{errors.email?.message}</span>}
             </div>
-            {/* <div className='phone'>
-                <h4>Телефон</h4>
-                <input type="text" name="password" placeholder='+996 ххх хх хх хх'
-                {...register("number", {
-                    required: "Параметр обязателен",
-                    maxLength: {
-                    value: 13,
-                    message: "Минимальная длина пароля 13 символов"
-                    }
-                })}
-                />
-                {errors.password && <span className="error" role="alert">{errors.number?.message}</span>}
-            </div> */}
             <div className='new_password'>
                 <h4>Создать пароль</h4>
                 <input type="password" name="password" placeholder='Введите пароль'
@@ -116,20 +157,15 @@ const Registration = (props) => {
                     <input className="Sign_in_input" type="submit" name="submit" value="Зарегестрироваться"/>
             </div>
             </form>
-            <div className='register'>
-                <div className="a_have_not">
-                    <Link to='/sign_in'><a href="" >У меня есть аккаунт</a></Link>
-                </div>
-                <button className='reg'>Войти</button>
-            </div>
-                </div>
-            </div>
-            <div className="container_2">
-                    <img src={reg_image} alt="" className="reg_image"/>
-            </div>
         </div>
-    )
+        <div className="img_box">
+            <img src={reg_image} alt="" />
+        </div>
+    </div>
+)
 
 };
+
+
 
 export default Registration
