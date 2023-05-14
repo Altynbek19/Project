@@ -64,7 +64,7 @@ const signOut = () => {
 if (user) {
     if (user.emailVerified){
         return (
-            <div className="container center-flex">
+            <div className="container_data">
                 <h1>Ваши данные</h1>
                 <div>Ваша почта: {user.email}</div>
                 <div onClick={signOut}>

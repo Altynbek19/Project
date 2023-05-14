@@ -58,10 +58,12 @@ body {
 .modal-container form {
     margin: 20px 0px;
 }
-.container {
-    max-width: 1300px;
-    margin: 10px auto;
-    min-height: 400px;
+.container_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 .center-flex {
     display: flex;
