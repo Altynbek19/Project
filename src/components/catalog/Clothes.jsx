@@ -47,7 +47,6 @@ function Clothes(props) {
                         <Card.Body>
                             <Card.Title>{category.name}</Card.Title>
                             <Card.Text>
-                                {category.description}
                             </Card.Text>
                         </Card.Body>
                     </Card>

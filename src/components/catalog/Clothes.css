@@ -89,39 +89,7 @@
 .woman_clothes:hover .for_woman{
     display: flex;
 } */
-.kids_clothes_container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 
-}
-.kids_clothes{
-    /* background: url(../../assets/catalog/kids_clothes.png) no-repeat; */
-    /* background-size: cover; */
-    width: 400px;
-    height: 400px;cursor: pointer;
-    display: flex;
-    align-items: end;
-}
-.kids_clothes img{
-    width: 400px;
-}
-.kids_clothes .for_kids{
-    background-color: rgba(0, 0, 0, 0.57);
-    width: 100%;
-    height: 60px;
-    color: white;
-    font-weight: bolder;
-    font-size: 25px;
-    display: none;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.kids_clothes:hover .for_kids{
-    display: flex;
-    margin-left: -250px;
-}
 
 @media screen and (max-width: 1280px) {
     .clothes_container{
