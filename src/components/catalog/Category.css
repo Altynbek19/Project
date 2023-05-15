@@ -308,9 +308,6 @@
         font-size: 14px;
         width: 200px;
     }
-    .category_container{
-
-    }
 }
 @media screen and (max-width: 280px) {
     .product_card img{
