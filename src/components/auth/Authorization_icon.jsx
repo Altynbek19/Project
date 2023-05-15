@@ -30,7 +30,6 @@ const Authorization = (props) => {
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='e-mail'>
-                    <h4>E-mail</h4>
                     <input type="text" placeholder='Введите e-mail'
                     {...register("email", {
                         required: "Обьязательно",

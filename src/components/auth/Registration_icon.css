@@ -126,3 +126,261 @@ a{
 .reg:hover{
     background-color: rgba(255, 255, 255, 0.259);
 }
+
+@media screen and (max-width: 1530px) {
+    .img_box img{
+        width: 700px;
+    }
+    .auth_box, .reg_box{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .img_box img{
+        width: 700px;
+    }
+    .auth_box{
+        padding-top: 50px;
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: none;
+        width: 260px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding-left: 10px;
+    }
+    .cc .Sign_in input{
+        width: 260px;
+        align-items: center;
+    }
+    .cc .Sign_in{
+        width: 260px;
+    }
+    .auth_box{
+        width: 260px;
+    }
+    .auth_box .forget{
+        width: 260px;
+    }
+    .contact_auth{
+        width: 260px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .auth_reg h2{
+        font-size: 20px;
+
+    }
+    .reg_box h4{
+        margin: 0px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .remember{
+        height: 50px;
+        margin-top: -10px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .img_box img{
+        width: 600px;
+    }
+    .auth_box, .reg_box{
+        padding-top: 50px;
+    }
+    input{
+        background: none;
+        width: 360px;
+        height: 38px;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding-left: 10px;
+    }
+    .cc .Sign_in input{
+        width: 260px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .cc .Sign_in{
+        width: 260px;
+    }
+    .auth_box{
+        width: 260px;
+    }
+    .auth_box .forget{
+        width: 260px;
+        padding-bottom: 20px;
+    }
+    .contact_auth{
+        width: 260px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .auth_reg h2{
+        font-size: 20px;
+
+    }
+}
+@media screen and (max-width: 1160px) {
+    .img_box img{
+        width: 500px;
+    }
+    .auth_box, .reg_box{
+        padding-top: 50px;
+        padding-right: 40px;
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: none;
+        width: 260px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding-left: 10px;
+    }
+    .cc .Sign_in input{
+        width: 260px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .cc .Sign_in{
+        width: 260px;
+    }
+    .auth_box{
+        width: 260px;
+    }
+    .auth_box .forget{
+        width: 260px;
+        padding-bottom: 20px;
+    }
+    .contact_auth{
+        width: 260px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .auth_reg h2{
+        font-size: 20px;
+
+    }
+}
+@media screen and (max-width: 850px) {
+    .cc{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_box img{
+        width: 400px;
+        display: none;
+    }
+    .auth_box, .reg_box{
+        width: 360px;
+        padding: 0px;
+        margin: 0px;
+    }
+    input{
+        background: none;
+        width: 345px;
+        height: 38px;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding-left: 10px;
+    }
+    .cc .Sign_in input{
+        background-color: black;
+        width: 360px;
+        min-height: 38px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        color: white;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    .cc .Sign_in input{
+        background-color: black;
+        width: 360px;
+        min-height: 38px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        color: white;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    .auth_box .forget{
+        width: 360px;
+        padding-bottom: 20px;
+    }
+    .contact_auth{
+        width: 360px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .auth_reg h2{
+        font-size: 20px;
+
+    }
+}
+@media screen and (max-width: 400px) {
+    .cc{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_box img{
+        width: 400px;
+        display: none;
+    }
+    .auth_box, .reg_box{
+        width: 200px;
+    }
+    input{
+        background: none;
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding-left: 10px;
+    }
+    .remember{
+        margin: -20px;
+    }
+    .cc .Sign_in input{
+        background-color: black;
+        width: 215px;
+        min-height: 30px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        color: white;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    .auth_box .forget{
+        width: 220px;
+        padding-bottom: 20px;
+    }
+    .contact_auth{
+        width: 220px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .social_net{
+        width: 220px;
+    }
+    .auth_reg h2{
+        font-size: 15px;
+
+    }
+}

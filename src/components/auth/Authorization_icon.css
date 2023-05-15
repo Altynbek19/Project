@@ -128,3 +128,11 @@ a{
 .reg:hover{
     background-color: rgba(255, 255, 255, 0.259);
 }
+.password{
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 1531px) {
+    .img_box img{
+        width: 500px;
+    }
+}
