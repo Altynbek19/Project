@@ -15,7 +15,6 @@ function Clothes(props) {
         getData();
     }, [])
 
-    console.log(categories)
 
     async function getData() {
         const q = query(collection(database, "category"));
@@ -23,7 +22,6 @@ function Clothes(props) {
         let category = []
         querySnapshot.forEach((doc) => {
            category.push({...doc.data(), id: doc.id})
-           console.log(doc.id)
         });
         setCategories(category)
     }

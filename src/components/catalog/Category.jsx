@@ -26,7 +26,6 @@ function Category(props) {
             products.push(product.data())
         })
         setProduct(products)
-        console.log(products)
     }
 
                         

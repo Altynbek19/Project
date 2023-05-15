@@ -30,6 +30,15 @@
     color: black;
     margin-right: 70px;
 }
+.product_card:hover .product_name_price  {
+    color: grey;
+}
+.product_card:hover .product_name, .product_card:hover .product_card .price  {
+    border-bottom: 1px solid grey;
+}
+.product_card:hover img{
+    opacity: 50%;
+}
 .product_card a{
     color: black;
 }

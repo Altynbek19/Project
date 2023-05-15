@@ -4,9 +4,22 @@
 .btnclose{
     display: none;
 }
+.btnclose img{
+    display: none;
+    position: absolute;
+    width: 20px;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+}
 @media (max-width: 770px) {
     .burger-menu-list{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
     .burger-menu {
         display: block;
@@ -23,6 +36,9 @@
         display: block;
         color: white;
         margin-left: 20px;
+    }
+    .btnclose img{
+        display: block;
     }
     .burger-menu-icon {
         display: flex;
@@ -72,7 +88,6 @@
     .burger-menu-item {
         margin: 10px 0;
         padding: 0;
-        border-bottom: 1px solid white;
     }
     .burger-menu-item:last-child {
         border-bottom: none;

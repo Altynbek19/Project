@@ -39,7 +39,6 @@
     background-color: rgba(0, 0, 0, 0.492);
 } */
 .card:hover{
-    border: 1px solid rgba(0, 0, 0, 0.47);
     background-color: rgba(0, 0, 0, 0.47);
 }
 .road{

@@ -1,6 +1,7 @@
 import { useState } from 'react'; 
 import './BurgerMenu.css'; 
 import { Link } from 'react-router-dom';
+import burger_close from './../../assets/header/burger_close.png'
  
 function BurgerMenu() { 
   const [isOpen, setIsOpen] = useState(false); 
@@ -15,14 +16,15 @@ function BurgerMenu() {
         <div className={`burger-menu-line ${isOpen ? 'open' : ''}`}></div> 
       </div> 
       <div className={`burger-menu-content ${isOpen ? 'open' : ''}`}> 
-        <div className="btnclose" onClick={handleToggle}>X</div> 
+        <div className="btnclose" onClick={handleToggle}>
+          <img src={burger_close} alt="" />
+        </div> 
         <ul className="burger-menu-list"> 
           <li className="burger-menu-item"><a href="/profile" className="burger-menu-link">Профиль</a></li> 
           <li className="burger-menu-item"><a href="/category" className="burger-menu-link">Каталог</a></li> 
           <li className="burger-menu-item has-subheader"> 
             <div className="burger-menu-link"> 
               <a href='/basket'>Корзина </a>
-              <div className="burger-menu-subheader-icon"></div> 
             </div> 
             <div className="burger-menu-subheader"> 
               <ul className="burger-menu-subheader-list"> 
