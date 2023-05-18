@@ -1,7 +1,7 @@
 import React from 'react';
 import './Clothes.css'
 import { Link } from 'react-router-dom';
-import { collection, query, getDocs} from "firebase/firestore";
+import { collection, query, getDocs, where} from "firebase/firestore";
 import { database } from "../../Firebase";
 import {useState, useEffect} from "react"
 import Card from 'react-bootstrap/Card';
@@ -21,11 +21,11 @@ function Clothes(props) {
         const querySnapshot = await getDocs(q);
         let category = []
         querySnapshot.forEach((doc) => {
-           category.push({...doc.data(), id: doc.id})
+            category.push({...doc.data(), id: doc.id})
         });
         setCategories(category)
     }
-
+    console.log(categories)
     const showAllCategory = categories.map((category, index) => {
     return (
         // <div className='catalog_container'>

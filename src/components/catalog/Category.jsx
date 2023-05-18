@@ -1,7 +1,6 @@
 import React from 'react';
 import './Category.css'
 import { Link } from 'react-router-dom';
-import man_product from '/src/assets/catalog/man_product.png'
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { collection, query, getDocs, where } from "firebase/firestore";
@@ -23,44 +22,48 @@ function Category(props) {
         const allProduct = await getDocs(q)
         let products = []
         allProduct.forEach(product => {
-            products.push(product.data())
+            // products.push(product.data())
+            products.push({ ...product.data(), id: product.id })
         })
         setProduct(products)
     }
+    console.log(product)
 
                         
     const viewProducts = product.map((product, index) => {
     return (
         <div>
             <div className="product_container">
-                            <div className='product_card'>
-                                <Link to='/product/:1'>
-                                    <img src={product.photo} alt="" />
-                                    <div className='product_name_price'>
-                                        <div className='product_name'>{product.name}</div>
-                                        <div className='price'>{product.price} KGS</div>
+                                <Link to={`/product/${product.id}`}>
+                                    <div className='product_card' key={index}>
+                                            <img src={product.photo} alt="" />
+                                            <div className='product_name_price'>
+                                                <div className='product_name'>{product.name}</div>
+                                                <div className='price'>{product.price} KGS</div>
+                                            </div>
+                                        {/* <div><button>Добавить в корзину</button></div> */}
                                     </div>
                                 </Link>
-                                {/* <div><button>Добавить в корзину</button></div> */}
-                            </div>
             </div>
         </div>  
     )
     })
     // const viewProducts = product.map((product, index) => {
     //     return (
-    //         <Card text="123123" key={index}>
-    //             <Card.Img variant="top" src={product.photo} />
-    //             <Card.Body>
-    //                 <Card.Title>{product.name}</Card.Title>
-    //                 <Card.Text>
-    //                 {product.description}
-    //                 </Card.Text>
-    //             </Card.Body>
-    //             <Card.Footer>
-    //                 <small className="text-muted">{product.price}$</small>
-    //             </Card.Footer>
-    //         </Card>
+    //         <Link to={`/product/${product.idName}`}>
+    //             <Card text="123123" key={index}>
+    //                 <Card.Img variant="top" src={product.photo} />
+    //                 <Card.Body>
+    //                     <Card.Title>{product.name}</Card.Title>
+    //                     <Card.Text>
+    //                     {product.description}
+    //                     </Card.Text>
+    //                 </Card.Body>
+    //                 <Card.Footer>
+    //                     <small className="text-muted">{product.price}$</small>
+    //                 </Card.Footer>
+    //             </Card>
+    //         </Link>
     //     )
     // })
     return (

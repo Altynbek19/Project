@@ -26,8 +26,7 @@
     width: 23px;
 }
 .basket:hover,.save:hover,.user_profile:hover{
-    height: 30px;
-    width: 28px;
+    transform: scale(1.25);
 }
 .menu{
     display: none;

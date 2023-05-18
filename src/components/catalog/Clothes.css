@@ -39,7 +39,10 @@
     background-color: rgba(0, 0, 0, 0.492);
 } */
 .card:hover{
-    background-color: rgba(0, 0, 0, 0.47);
+    /* background-color: rgba(0, 0, 0, 0.47); */
+    opacity: 80%;
+    transform: scale(1.15);
+    transition: 500ms;
 }
 .road{
     display: flex;

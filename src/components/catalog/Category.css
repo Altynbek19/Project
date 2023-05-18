@@ -36,6 +36,10 @@
 .product_card:hover .product_name, .product_card:hover .product_card .price  {
     border-bottom: 1px solid grey;
 }
+.product_card:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+}
 .product_card:hover img{
     opacity: 50%;
 }

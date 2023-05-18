@@ -168,6 +168,16 @@ const router = createBrowserRouter([
         <Footer/>
     </div>
     )
+  },
+  {
+    path: `/product/:product`,
+    element:(
+    <div>
+        <Header />
+        <Product />
+        <Footer/>
+    </div>
+    )
   }
 ]);
 
