@@ -15,18 +15,17 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { collection, query, getDocs, where} from "firebase/firestore";
 import { database } from "../../Firebase";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import CardGroup from 'react-bootstrap/CardGroup';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { ContextBox } from '../../App';
 
 function Product(props) {
-
-
-    
     const id = useParams()
     console.log(id)
     const [products, setProducts] = useState([])
+    const [box, setBox] = useContext(ContextBox)
 
     useEffect(() => {
         getData();
@@ -42,58 +41,100 @@ function Product(props) {
         });
         setProducts(product)
     }
-    console.log(products)
+
+    function addToCart(event) {
+        
+        alert("Товар добавлен в корзину");
+        const currentCard = event.currentTarget.closest('.card')
+
+        if (box.find(item => item.id === currentCard.querySelector('.id-card').dataset.id)) {
+            const index = box.findIndex(item => item.id === currentCard.querySelector('.id-card').dataset.id)
+            let nexBox = box;
+            nexBox[index].count++;
+            setBox(nexBox)
+        } else {
+            setBox([
+                ...box,
+                {
+                    image: currentCard.querySelector('.card-img-top').getAttribute('src'),
+                    title: currentCard.querySelector('.card-title').innerHTML,
+                    // description: currentCard.querySelector('.card-text').innerHTML,
+                    price: currentCard.querySelector('.price').innerHTML,
+                    id: currentCard.querySelector('.id-card').dataset.id,
+                    count: 1
+                }
+            ])
+            alert("Товар добавлен в корзину");
+        }
+    }
+
     const showAllProduct = products.map((product, index) => {
         return (
             <div className='product_page'>
-                <div className='road'>
-                    <div><Link to='/'>Главная</Link></div>
-                    <div><Link to='/category'>Одежда</Link></div>
-                </div>
+                            <div className='road'>
+                                <div><Link to='/'>Главная</Link></div>
+                                <div><Link to='/category'>Одежда</Link></div>
+                            </div>
                 <div className='product_box'>
+                    <div className="id-card" data-id={product.id}></div>
                     <div className='product_full_img'>
-                        {/* <div className='product_img'>
-                            <img className='product_font' src={product?.photo} alt=""/>
-                            <img className='product_main' src={product?.photo} alt="" />
-                            <img className='product_top' src={product?.photo} alt="" />
-                            <img className='product_behind' src={product?.photo} alt="" />
-                        </div> */}
-                        <div className='big_img_product'><img src={product?.photo} alt="" /></div>
+                        <div className='big_img_product'><img src={product?.photo} className='card-img-top' alt="" /></div>
                     </div>
                     <div className='product_info'>
                         <div className='card_product'>
-                            <h1>{product.name}</h1>
-                            <div className='info'>
-                                <strong>{product.price} KGS</strong>
-                                <div className='select_input'>
-                                {/* <select name="user_city">
-                                    <option value="">Выберите размер</option>
-                                    <option value="1">37</option>
-                                    <option value="2">38</option>
-                                    <option value="3">39</option>
-                                    <option value="4">40</option>
-                                    <option value="5">41</option>
-                                    <option value="6">42</option>
-                                    <option value="7">43</option>
-                                    <option value="8">44</option>
-                                    <option value="9">45</option>
-                                </select> */}
+                            <h1 className='card-title'>{product.name}</h1>
+                            <div className='card-footer'>
+                                <div className='info'>
+                                    <strong className='price'><span>{product.price}</span>  KGS</strong>
                                 </div>
-                            </div>
-                            <input type="submit" value='Добавить в корзину' className='add_cart'/>                   
+                                <input type="submit" onClick={addToCart} value='Добавить в корзину' className='add_cart'/>    
+                            </div>             
                         </div>
-                        {/* <div className='review'>
-                            <div className='review_mess'>Отзывы (33)</div>
-                            <div className='star'>
-                                <img src={star_full} alt="" />
-                                <img src={star_full} alt="" />
-                                <img src={star_full} alt="" />
-                                <img src={star_full} alt="" />
-                                <img src={star_half} alt="" />
-                            </div>
-                        </div> */}
                     </div>
                 </div>
+                
+            </div>
+        );
+    // return (
+    //     <div className='product_page'>
+    //             <div className='road'>
+    //                 <div><Link to='/'>Главная</Link></div>
+    //                 <div><Link to='/category'>Одежда</Link></div>
+    //             </div>
+    //         <div className='product_box'>
+    //                 <Card text="123123" key={index}>
+    //                             <div className="id-card" data-id={product.id}></div>
+    //                             <div className='product_full_img'>
+    //                                 <Card.Img variant="top" src={product.photo} />
+    //                             </div>
+    //                         <div className='cardbody'>
+    //                             <Card.Body className='card_body_product'>
+    //                                 <div className='name'>
+    //                                     <Card.Title>
+    //                                         <h1>{product.name}</h1>
+    //                                     </Card.Title>
+    //                                 </div>
+    //                                 <Card.Footer>
+    //                                     <div className='info'>
+    //                                         <div className='price'>
+    //                                             <span className="price-product" >Цена: {product.price}</span>som
+    //                                         </div>
+    //                                     </div>
+    //                                     <div> <input type="submit" onClick={addToCart} value='Добавить в корзину' className='add_cart'/></div>
+    //                                 </Card.Footer>
+    //                             </Card.Body>
+    //                             <div className='line'> </div>
+    //                         </div>
+    //                 </Card>
+    //         </div>
+    //     </div>
+    // );
+    })
+    return (
+        <div>
+            <div className="product_page_container">
+                <CardGroup className='all_product_page'>
+                    {showAllProduct}
                 <div className='about_product'>
                         <h1>О товаре</h1>
                         <p>Легендарный и вневременной дизайн RS-Z LTH TRAINERS  всегда будет в моде. 
@@ -126,32 +167,6 @@ function Product(props) {
                             </div>
                         </div>
                 </div>
-                
-            </div>
-        );
-    // return (
-    //     <div className='catalog_container'>
-    //         <div>
-    //             <h1>{product.name}</h1>
-    //         </div>
-    //         {/* <Link to={`/category/${product.id}`}>
-    //                 <Card text="qwerty" key={index}>
-    //                     <Card.Img variant="top" src={product?.photo} />
-    //                     <Card.Body>
-    //                         <Card.Title>{product.name}</Card.Title>
-    //                         <Card.Text>
-    //                         </Card.Text>
-    //                     </Card.Body>
-    //                 </Card>
-    //             </Link> */}
-    //     </div>
-    // );
-    })
-    return (
-        <div>
-            <div className="product_page_container">
-                <CardGroup>
-                    {showAllProduct}
                 </CardGroup>
             </div>
         </div>

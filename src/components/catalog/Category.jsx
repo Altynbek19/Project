@@ -73,7 +73,7 @@ function Category(props) {
                             <div><Link to='/'>Главная</Link></div>
                             <div><Link to='/category'>Одежда</Link></div>
                         </div>
-                <CardGroup>
+                <CardGroup className='all_category'>
                     {viewProducts}
                 </CardGroup>
             </div>

@@ -40,10 +40,10 @@ function Clothes(props) {
         // </div>
         <div className='catalog_container'>
             <Link to={`/category/${category.id}`}>
-                    <Card text="qwerty" key={index}>
-                        <Card.Img variant="top" src={category?.photo} />
+                    <Card text="qwerty" key={index} className='clothes_card'>
+                        <Card.Img variant="top" className='clothes_img' src={category?.photo} />
                         <Card.Body>
-                            <Card.Title>{category.name}</Card.Title>
+                            <Card.Title className='name_clothes'>{category.name}</Card.Title>
                             <Card.Text>
                             </Card.Text>
                         </Card.Body>
@@ -85,7 +85,7 @@ function Clothes(props) {
                     <div><Link to='/'>Главная</Link></div>
                     <div><Link to='/Category'>Одежда</Link></div>
                 </div>
-                <CardGroup>
+                <CardGroup className='all_clothes'>
                     {showAllCategory}
                 </CardGroup>
             </div>
